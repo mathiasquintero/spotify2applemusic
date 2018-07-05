@@ -9,6 +9,17 @@
 import Foundation
 
 /**
+ Will turn any keyPath into a closure
+ 
+ - Parameter keyPath: KeyPath
+ 
+ - Returns: closure returning the property in the keypath
+ */
+public func closure<A, B>(_ keyPath: KeyPath<A, B>) -> (A) -> B {
+    return { $0[keyPath: keyPath] }
+}
+
+/**
  Will return whatever you give it. Useful to replace '{ $0 }' and make the code more approachable and friendly ;)
  
  - Parameter value: value
@@ -101,7 +112,10 @@ public func add<V, T>(starting argument: T) -> (V) -> (T, V) {
  
  - Returns: mapping function
  */
-public func partialMap<V, T, O, R>(partial: @escaping (V) -> (T), map: @escaping (T) -> (O), cleanup: @escaping (V, O) -> R) -> (V) -> (R) {
+public func partialMap<V, T, O, R>(partial: @escaping (V) -> (T),
+                                   map: @escaping (T) -> (O),
+                                   cleanup: @escaping (V, O) -> R) -> (V) -> (R) {
+    
     return { $0 | partial >>> map >>> add(starting: $0) >>> cleanup }
 }
 

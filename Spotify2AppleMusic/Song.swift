@@ -17,7 +17,7 @@ struct SpotifySong {
 extension SpotifySong {
     
     init(from track: SPTTrack) {
-        let artists = track.artists.flatMap { $0 as? SPTPartialArtist }
+        let artists = track.artists.compactMap { $0 as? SPTPartialArtist }
         self.init(name: track.name, artists: artists => { $0.name }, album: track.album.name)
     }
     
@@ -61,7 +61,11 @@ extension SpotifySong {
 extension String {
     
     var songFormatted: String {
-        return lowercased().replacingOccurrences(of: " - ", with: " ").replacingOccurrences(of: "(", with: .empty).replacingOccurrences(of: ")", with: "").replacingOccurrences(of: " single", with: "")
+        return lowercased()
+//            .replacingOccurrences(of: " - ", with: " ")
+//            .replacingOccurrences(of: "(", with: .empty)
+//            .replacingOccurrences(of: ")", with: "")
+//            .replacingOccurrences(of: " single", with: "")
     }
     
 }

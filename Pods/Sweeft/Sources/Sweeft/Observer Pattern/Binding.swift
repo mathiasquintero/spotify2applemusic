@@ -49,7 +49,7 @@ public func **<C: ObservableContainer, O>(_ container: C?, _ mapping: @escaping 
 }
 
 /// Apply handler to binding
-public func >>><T: Observable, O>(_ binding: Binding<T, O>?, _ handler: @escaping (O) -> ()) {
+public func >>><T, O>(_ binding: Binding<T, O>?, _ handler: @escaping (O) -> ()) {
     var binding = binding
     binding?.apply(to: handler)
 }
@@ -65,12 +65,12 @@ public func >>><C: ObservableContainer>(_ value: C?, _ handler: @escaping (C.Obs
 }
 
 /// Apply handler to collection of observables
-public func >>><C: Collection>(_ items: C, _ handler: @escaping (C.Iterator.Element) -> ()) where C.Iterator.Element: Observable {
+public func >>><C: Collection>(_ items: C, _ handler: @escaping (C.Element) -> ()) where C.Element: Observable {
     items => { $0 >>> handler }
 }
 
 /// Apply handler to collection of observable containers
-public func >>><C: Collection>(_ items: C, _ handler: @escaping (C.Iterator.Element.ObservableItem) -> ()) where C.Iterator.Element: ObservableContainer {
+public func >>><C: Collection>(_ items: C, _ handler: @escaping (C.Element.ObservableItem) -> ()) where C.Element: ObservableContainer {
     items => { $0 >>> handler }
 }
 
@@ -79,7 +79,7 @@ public func >>><T: Observable>(_ items: [T], _ handlers: [(T) -> ()]) {
     guard items.count == handlers.count else {
         return
     }
-    handlers => {
+    handlers.withIndex => {
         (items | $1) >>> $0
     }
 }

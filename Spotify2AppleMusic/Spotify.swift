@@ -33,69 +33,33 @@ class Spotify {
     private init() {
     }
     
-    private func handlePages<Item>(_ page: SPTListPage)  -> Promise<[Item], APIError>  {
-        let promise = Promise<[Item], APIError>()
-        let items = page.items.flatMap { $0 as? Item }
-        if page.hasNextPage {
-            page.requestNextPage(withAccessToken: auth.session.accessToken) { error, result in
-                guard let result = result as? SPTListPage, error == nil else {
-                    promise.error(with: .unknown(error: error!))
-                    return
-                }
-                self.handlePages(result).nest(to: promise) { songs in
-                    return items + songs
-                }
-            }
-        } else {
-            promise.success(with: items)
+    private func handlePages<Item>(_ page: SPTListPage) -> Promise<[Item], APIError>  {
+
+        let items = page.items.compactMap { $0 as? Item }
+
+        return page.next(token: auth.session.accessToken).flatMap { page in
+            guard let page = page else { return .successful(with: items) }
+            return self.handlePages(page).map { items + $0 }
         }
-        return promise
     }
     
     func playlists() -> Promise<[ImportSelection], APIError> {
-        let promise = Promise<[ImportSelection], APIError>()
-        guard let session = auth.session else {
-            promise.error(with: .noData)
-            return promise
+
+        return SPTPlaylistList.playlists(auth: auth).flatMap { page in
+            return self.handlePages(page).map { $0 => ImportSelection.playlist }
         }
-        SPTPlaylistList.playlists(forUser: session.canonicalUsername, withAccessToken: session.accessToken) { error, result in
-            guard let result = result as? SPTListPage, error == nil else {
-                promise.error(with: .unknown(error: error!))
-                return
-            }
-            self.handlePages(result).nested({ $0 => ImportSelection.playlist }).nest(to: promise, using: id)
-        }
-        return promise
     }
     
     func songs(in playlist: SPTPartialPlaylist) -> Promise<[SpotifySong], APIError> {
-        let promise = Promise<[SpotifySong], APIError>()
-        SPTPlaylistSnapshot.playlist(withURI: playlist.uri, accessToken: auth.session.accessToken) { error, result in
-            guard let result = result as? SPTPlaylistSnapshot, error == nil else {
-                promise.error(with: .unknown(error: error!))
-                return
-            }
-            let tracks = result.tracksForPlayback().flatMap { $0 as? SPTPlaylistTrack }
-            let songs = tracks => SpotifySong.init(from:)
-            promise.success(with: songs)
+        return SPTPlaylistSnapshot.snapshot(for: playlist, token: auth.session.accessToken).map { snapshot in
+            let tracks = snapshot.tracksForPlayback().flatMap { $0 as? SPTPlaylistTrack }
+            return tracks => SpotifySong.init(from:)
         }
-        return promise
     }
     
     func fetchSongs() -> Promise<[SpotifySong], APIError> {
-        let promise = Promise<[SpotifySong], APIError>()
-        guard let session = auth.session else {
-            promise.error(with: .noData)
-            return promise
-        }
-        SPTYourMusic.savedTracksForUser(withAccessToken: session.accessToken) { error, result in
-            guard let result = result as? SPTListPage, error == nil else {
-                promise.error(with: .unknown(error: error!))
-                return
-            }
-            self.handlePages(result).nested({ $0 => SpotifySong.init(from:) }).nest(to: promise, using: id)
-        }
-        return promise
+        return SPTYourMusic.firstPage(auth: auth).flatMap { self.handlePages($0) }
+                                                 .map { $0 => SpotifySong.init(from:) }
     }
     
     func loginIfNeeded(viewController: UIViewController) {
@@ -117,4 +81,54 @@ class Spotify {
         return true
     }
     
+}
+
+extension SPTPlaylistList {
+
+    static func playlists(auth: SPTAuth) -> Response<SPTListPage> {
+        guard let session = auth.session else { return .errored(with: .noData) }
+        return .calling { playlists(forUser: session.canonicalUsername, withAccessToken: session.accessToken, callback: $0) }
+    }
+
+}
+
+extension SPTPlaylistSnapshot {
+
+    static func snapshot(for playlist: SPTPartialPlaylist, token: String) -> Response<SPTPlaylistSnapshot> {
+        return .calling { SPTPlaylistSnapshot.playlist(withURI: playlist.uri, accessToken: token, callback: $0) }
+    }
+
+}
+
+extension SPTYourMusic {
+
+    static func firstPage(auth: SPTAuth) -> Response<SPTListPage> {
+        guard let session = auth.session else { return .errored(with: .noData) }
+        return .calling { SPTYourMusic.savedTracksForUser(withAccessToken: session.accessToken, callback: $0) }
+    }
+
+}
+
+extension SPTListPage {
+
+    func next(token: String) -> Response<SPTListPage?> {
+        guard hasNextPage else { return .successful(with: nil) }
+        return .calling { self.requestNextPage(withAccessToken: token, callback: $0) }
+    }
+
+}
+
+extension Promise where E == APIError {
+
+    static func calling(handler: @escaping (@escaping SPTRequestCallback) -> Void) -> Response<T> {
+        return .new { setter in
+            handler { error, result in
+                guard let result = result as? T, error == nil else {
+                    return setter.error(with: .unknown(error: error!))
+                }
+                setter.success(with: result)
+            }
+        }
+    }
+
 }

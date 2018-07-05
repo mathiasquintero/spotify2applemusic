@@ -7,61 +7,82 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D8E03907635CE44BB7400FDD88D8ED /* StatusFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FC87276BE92FB1D7EB6E6505E3D8B9 /* StatusFetcher.swift */; };
-		0AE04C9750CC823CBC0DCF14B571C6D1 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A804E88DE0A176BE2CFA4FE82C1B93E /* Binding.swift */; };
-		0D9735B5463FEBCEE8B197D00B35EDED /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1DF6C119B12BFA658DB5CA00D0EE4D3 /* APIError.swift */; };
-		0F6DA86B4AB019D77BC3F01DB0034DB9 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38F750E51EA6AD1F5A68E175E6E7E411 /* Node.swift */; };
-		105B5E16EBEB8A79A8855ED0BB2A8C29 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5512CCF958B60FD83757E131DD02940D /* Array.swift */; };
-		14EC8974057943F7255EC0BAA4EEC521 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD3AE8A9FFD308DF2E1C48D8E1FF4472 /* Assignment.swift */; };
-		15B8681559197A89DE9CA60D2F686983 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D5373E32EB3465801C507EE27188 /* JSON.swift */; };
-		15B8D9CC6EAE9566F86DE24DBFCCF647 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACEDDF617E6E1FD50D9BE795B5C03DF /* Optional.swift */; };
-		205C67953FD66DFB3388E1056E2BF6D5 /* BulkPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7E5C53321842A21BB6DD99D9BA8033 /* BulkPromise.swift */; };
-		210BFFEA67CB51AED4186BBA1ADDFA87 /* ArrayOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D4CDAC4ABE5DEE6E832119485AEE15E /* ArrayOperators.swift */; };
-		211DDA048790EB10A99FABCE1951D024 /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 791A2E64B0BF5E741EB84511CFA1F669 /* Int.swift */; };
-		23F72A0BBD44330281D4D5FF6EC0FC7B /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8A9E2BB6F57B87DA01D61E1A7EA94F /* APIEndpoint.swift */; };
-		2AC5294AC75904C1F5CAAF15DB02972A /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495B1754C31B55C97E0300B4DAE7D8E1 /* Collection.swift */; };
-		2DEFEE67258E930D7DC2DEE5B722EA84 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248AA441704AB2B033F83538E825408 /* Dictionary.swift */; };
-		4362ECACCE0BFE33BBB0203BA4655742 /* PromiseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91BE9BBD8BB8B2E85BF11C5BD4671D86 /* PromiseHandler.swift */; };
-		466E8D92C1F79DB254C5051C343CA0CD /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE125B97BFC6B655FA60717ABBB37696 /* Math.swift */; };
-		4DBFCF67A5B95BE33505477CBACCE855 /* ReducingParametersOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42998ECA796A4AE02CDAD6FD14F63E6B /* ReducingParametersOperators.swift */; };
-		4EAF255EB247DFED1074A3758F18213D /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CE64C120EB9321F68ABBEF2E7EA3C4 /* Auth.swift */; };
-		523696392627023428D5F6B9DE17FC31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		548A3BBB616E22DC8160089A98DEFD4E /* CSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B6E42687BBE8C0E93FB4B5727A3EFE /* CSP.swift */; };
-		5F5465A1F5EBFA80E5957CE48E6611F1 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B95A3649868183F181D69265133EB31 /* Bool.swift */; };
-		6022B5F9118968210B552646D9C4EE01 /* ReducingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F215804141F204C06475AADBD1F2DA91 /* ReducingParameters.swift */; };
-		66EBBD13426A7CD070888D35D966FB91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		70CB1C9E2D64568410F976D81DD5615C /* StatusSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF26398C62928EAA84E6E9D64D972C5 /* StatusSerializable.swift */; };
-		7289EA30E612B060AE41BA5D6CB0F3BF /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F182A6797E3E0D5A7AC6F02512A25A0 /* Other.swift */; };
-		7483B7C12E10EF0FF4BFB2E252ECF5BE /* Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7BB358E669A023A029E8B0CEE9A306 /* Grant.swift */; };
-		74A004B0D342F55BFF5BB15AEECDDFF0 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D943428C3E236E71C8AD9304EC57075A /* OAuthManager.swift */; };
-		7B2F16401E7A9A69CC4451A7E8493AC4 /* Pods-Spotify2AppleMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F2C376AAE5B0A7240B704716A4FAFFF /* Pods-Spotify2AppleMusic-dummy.m */; };
-		7D6B7959278A7395F43400A323FC0147 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = A265A38D0D51D42A655076A323077F86 /* Double.swift */; };
-		8195A1DD2F34957EBBC5C8AAB8B846A7 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291E015DC7A63FF5D4EEC4A22D898E5C /* Status.swift */; };
-		830C70F78FC09D6082F745545036C5C3 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43058FA3798A82A50E68312807A313B4 /* Date.swift */; };
-		83A10A2640C4264B8F93B38FAC715FAC /* ObjectStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AAEFCEEED70EEC5CCDEE5174C19E51 /* ObjectStatus.swift */; };
-		84F36F28EEA6F5EAC0A5E5EBE66DFF39 /* StatusKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42392BE2081E4021273F61D238731EDE /* StatusKey.swift */; };
-		87529DB9DFD6EDC83B1DEA98D8ADB847 /* Sweeft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 22D884C7FEB56D9C7965B25EFD89C62D /* Sweeft-dummy.m */; };
-		903EFF717CD86C954B6B61C27182512B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A6FD786400A4CBA092879B7670DACFC /* String.swift */; };
-		961A6F6B607C66F986DB1564A182BE05 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BE21BF64816465A6781E03C5A24755 /* PriorityQueue.swift */; };
-		9F7D879C26EC10E21F23F1F33452F88F /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49E20A51BB2868302CD3DBF3AF27D35 /* Data.swift */; };
-		ABD9670382F38E53F207308AE99DA810 /* DataRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51621D3834F2A73D4E3299473C83DFA9 /* DataRepresentable.swift */; };
-		AC892DBC04ADC89430928C254D2E08AD /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19CC9933BAC77131F7A31C964C7EC3C2 /* Promise.swift */; };
-		B8AEF017B8FA471D554E0030F892789C /* Mutlithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8485254C7B21081CC5A62DAD9363D224 /* Mutlithreading.swift */; };
-		C1B6EEFC667886C7570B52F769F4C8B2 /* MultithreadingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751C6CEBB1C776C2BC064AB2AF5EE956 /* MultithreadingOperators.swift */; };
-		C34AB9BBDDFAB3E30458A46E29A8E127 /* Defaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3AF6E56866442923668E96D220FF51 /* Defaultable.swift */; };
-		C7171E36592C8DB350D51736757B9292 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC2704C1CAA9413CEA890B839A8CF60 /* Mappable.swift */; };
-		CDD4B2C96F4323A7855EC52ACA522877 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34062A19922E1570E1E942F0097D82E /* Constraint.swift */; };
-		CF5385E0DB38C60EC7C1AAF2946AB338 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006120FE05DC3D40F7162704D8DB8527 /* Observable.swift */; };
-		CF9755486980199478EC35BE2B02F1A8 /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964EC468A3E73718F7E9D6D6A344E23B /* Set.swift */; };
-		CFAC1E56D79EE5521372AF4B15CE08A3 /* VariableInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A9E58A485D8F9595276A27D0B72F70 /* VariableInstance.swift */; };
-		D1D7F544E2C2AA2CF07251A7E7E096E6 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39FF4770A6F3ABF2E088D4579AEDDF95 /* Graph.swift */; };
-		D8C569BB936E935E310EDE512721D35F /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE5582AA91EC12F6694DB5E8D98B57 /* API.swift */; };
-		DEEA12E17C60546D41EB0893E022E76F /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326857ECAD38777E3123E5957F1843A0 /* OAuth.swift */; };
-		E967153441CEDA6539FC90193B077EED /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B47C43B5C348BED7C9C35FEBFFCC8C9A /* URL.swift */; };
-		E9DC9CB1DF47E41751084338BF9EBEEC /* ValueComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA55C36F24460A541192942D61CA7DB /* ValueComparable.swift */; };
-		EB2BE8232BD9DDD52721463763D0A231 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FEF7E4DEB0E52E42BDF3741B9305F03 /* Functional.swift */; };
-		ED0C5BCEE1F50459A5FF2A6F2C0033BE /* Pods-Spotify2AppleMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3897F3D32DCA07DFB6509250B6548290 /* Pods-Spotify2AppleMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F41F5F216DC583BC1A4159B75E3C7CA1 /* Sweeft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 467047BE9EFCA6C71C96F27829DF21A6 /* Sweeft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		001953846E8D8CC4F2A77F8CB810D1EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF06051EEF512C46C4F4C1D23714867 /* String.swift */; };
+		0B4B656CEDAF74FEE8F6EFB8D625CEF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		0CD552FDE8459E581B9A1F8EA97A0344 /* PromiseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBECB17AA0C01ED5B4873EE1D0D737B /* PromiseProtocol.swift */; };
+		0CF7FDC862F4E0EE6B345335A6D5D910 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80AFB514F847A30399FF496CAC897068 /* Status.swift */; };
+		12B6E9A8487F573384E67BCB8C27C902 /* Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4325415E55FA0278EFA3C55E8162D450 /* Promise.swift */; };
+		15BE1785010AAC4AF10FED7BB302995B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */; };
+		17EFA95CBBC3A97654D42EE660EF354A /* VariableInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6778C01DC13D37137EC9F11C469F63 /* VariableInstance.swift */; };
+		1C23BCE0601F400F75463652DD01742F /* StatusKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB2F3B61762EC2B7AA8061D032C99DE /* StatusKey.swift */; };
+		210A07A5145B67C70015E972C9155D7B /* BulkPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582BE0819EAA66EAD2CA55FA0E1ED9D3 /* BulkPromise.swift */; };
+		2298FAE3F643A25A45A386946BB35545 /* PromiseSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3138C1F66986853B1A73C0D65AB0791 /* PromiseSetter.swift */; };
+		26B894A7E343545A95CE78C199AD5EB4 /* Sweeft-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C519F1365594E4D4D17307312F8AF43 /* Sweeft-dummy.m */; };
+		27045608AACFF146B363F12BCB644E8F /* RetryPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD1AD46FEFF1C93EE390FA8DD6382CA6 /* RetryPromise.swift */; };
+		29CF865E45B48B1AE999869906704559 /* SettablePromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDA2D94E9C505FE5C9DB39DD1B821E1 /* SettablePromise.swift */; };
+		2A6271B9BB1B2B2F2B65FF5A204B901F /* ReducingParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0B36EB94A612F2C97181360BD3025 /* ReducingParameters.swift */; };
+		2FC360A325E458C30CB75A5FA49B62C5 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7B3F0E0624EE85F74B22F796A6D64A /* Mappable.swift */; };
+		2FD05991176A64DEC25491A5E1245C61 /* GenerizableError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C155250B271B2739435DE301189C50C /* GenerizableError.swift */; };
+		30BC0988D4DF63490B86D9DC516AA383 /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9B100929FA01ACBA4E96BFE2609B5B /* Keychain.swift */; };
+		33306B4E805980FAF81239C3E7947150 /* Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27F80A9CE0EAAE77D23FD1DF00997146 /* Other.swift */; };
+		346F03837173F93EDDEBEA6653FBE899 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C33AA9AED623DFB90BC1F38A50639 /* Dictionary.swift */; };
+		371709DE84B5D31278CF002394DAEA1F /* CustomAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A4E36704B378F348F2E2352E0D1F2B /* CustomAPI.swift */; };
+		386994EF8A25DE581047C4C6570479B8 /* MultithreadingOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035D3767D51EA0BD8D74AA5CDB6C4AF7 /* MultithreadingOperators.swift */; };
+		3916D0ED3205C947771B3CFDAD2D9208 /* APIObjectWithDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC16903CA79CB614FD2A6FF98D07B26 /* APIObjectWithDetail.swift */; };
+		3A9177DF0AD67DC2F1A3E9E30D00E52F /* OAuthAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B4FEE437AE56DCA13D68E60EA17BCE /* OAuthAPI.swift */; };
+		3F940D281DE10BBFF94709C8C0B3791F /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A241CA96D612916013C61CB45752EE /* ErrorHandling.swift */; };
+		4681AF2D87765C60796A80ABE89DBA9D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB2BE2478FDABB972F60EAA288E434 /* HTTPMethod.swift */; };
+		476A18C95FBB52498B3BFAA1DD41736C /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDC741CB47DADDCAA3B3DC311FF6642 /* URL.swift */; };
+		4E32ED4A60F224E8733283AA87453468 /* Bool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7C8FE2EBBEBAEABE664921DCFBBFE5 /* Bool.swift */; };
+		4F95372C42ED105AD971569205E199D9 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DC2A28F3718A83D3F78EEE5F8A72CE /* Optional.swift */; };
+		501EF50289645BB6E7A916E749B0685D /* Set.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94B69D0C8BAB2C08993A6E34B048C215 /* Set.swift */; };
+		510A7F7660C1749E8E65B72510E7EB22 /* Mutlithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE66DE0852513618BCF89537748DD1B4 /* Mutlithreading.swift */; };
+		5169832E11436F96FCCFD073F9124E0A /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B9983C1D5047F46E01DB50C996FF74 /* PriorityQueue.swift */; };
+		526343C488B28D00D671FAE23229F196 /* Defaultable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2B47AB92C3BA45EE69B9280F0F10F /* Defaultable.swift */; };
+		58EF11F01FD0EFCAF1524DCBF69B11EC /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC1310D84BCB36B4828107DF8244B8A /* Array.swift */; };
+		5B68B9BB655ABAF7217C1E27E469B441 /* APIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 797A9126D859FF4EFCDC5BCB6F1C8968 /* APIResponse.swift */; };
+		5B8EA542CD887D5600E047F89716A86C /* WebForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFACB79F25C870E9C023360888B7635E /* WebForm.swift */; };
+		5C38A7AD0A1104A403A4D3159E422643 /* MultiFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 482F4EE57EAE2F71EA8EA7B319ACDA80 /* MultiFormData.swift */; };
+		5FD68710668A0A745233809EEB3DDD7D /* Dispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59202D0402769665EEE912FA04FF80 /* Dispatcher.swift */; };
+		6106776DA868F76CCE01D0E2145AC3BD /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E647292537460FB18AC8521E2E41DFE /* Data.swift */; };
+		616668FC3991B4C28D9D4944D54B197C /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD186A2F3CE50D995C696759866DB2C /* Observable.swift */; };
+		6E258740CFBEECF05A64FFCC27EF6AAA /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E12BAA68FDF276218F5205A2F8EF0F4 /* Storage.swift */; };
+		6F5834C5F96033523A3556EFF5992675 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */; };
+		71DAD7207F9BE5546FD0B59666B439D4 /* ReducingParametersOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF67675E64FDECBA248F33E29EC876F2 /* ReducingParametersOperators.swift */; };
+		7B2F16401E7A9A69CC4451A7E8493AC4 /* Pods-Spotify2AppleMusic-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 64C073CF591D2C6538417715BA2B2CF3 /* Pods-Spotify2AppleMusic-dummy.m */; };
+		7DF1BC81F36DDD3B0313C8F2010F8B73 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0970D9952CADF8A976295B6156B911 /* APIEndpoint.swift */; };
+		81B38BD29C54492D878E9DCC0F903B41 /* OAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06876296A26D36456168B302E73D5945 /* OAuthManager.swift */; };
+		8459F8049B7FCC8171A52B233E73172F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57E950C20681614158F6C7DE95B0D22 /* Math.swift */; };
+		8475F6FCE036A1311A26DB535FEE1758 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5470DA05FA2CDA1A1BCE3762FC69D685 /* JSON.swift */; };
+		85488AEC4F838A765155E23547E46908 /* PromiseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C29D5629B6CDD66AA3D4B597416B481 /* PromiseState.swift */; };
+		882B5C3F25D434E806E6D0C0A4936F84 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67E7FD488934E517030A19C53D5CE3E /* Auth.swift */; };
+		986F423B059718C104CC868FBC35EED3 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DF0FA20D7E30B6C38996FDFBA14D1 /* Double.swift */; };
+		98E0D17C4779DF7576EECB3E5A503079 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E45D93254D3055BFF9E4E54E9190C9 /* Cache.swift */; };
+		9C034F3016714CBFCB6741D22C40F2E5 /* DataRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A890C12A82415AB10F3147C413CAB84 /* DataRepresentable.swift */; };
+		A08CBF000B799FDC8D3F7924685E12E4 /* PromiseProtocolConformance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 481CF4D2B972EFDC62B82CF4BBAD4875 /* PromiseProtocolConformance.swift */; };
+		A94F8B47A381B06A92B3A4443A516DE2 /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964699D1F84EA9732FCDAFBD15E65899 /* Assignment.swift */; };
+		AD92121B1EB20B883034F71BABE7CB8E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4655F4D09CE4565E6F65CB0E9D50883D /* APIError.swift */; };
+		B237470536B237F4E96BC43E43163206 /* Grant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F543F71ECEDCD23DC312695167A6CEF9 /* Grant.swift */; };
+		B26DC32A38CFF9F548EB01C22993B9A3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F66ED0644E3B8CD6F8442A66C83555 /* Result.swift */; };
+		BA3F5B3F75B2B1AE2DF733E3B78107C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5371B0D0B91128413B2D33F74DBAF5 /* API.swift */; };
+		C35D85ACFFA9AA534F01E489E5BB5AF7 /* DelegatedAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CD6FFD3B93BB804F1C61E880BFCB89 /* DelegatedAPI.swift */; };
+		C36D4488814874991B3B703E4B45FE23 /* ArrayOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C34FA7CD6052C058ADF4F31D5D1EB39 /* ArrayOperators.swift */; };
+		CA1FDF398688C95BCDB8E69D1ACCD0B5 /* CSP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3758BBDF6CF9276135C5B24CE2A85E /* CSP.swift */; };
+		CB7982D72E2A218C1BB9E2455BE66BA5 /* ValueComparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5463CD59313F0856E4B4E11C5EE09722 /* ValueComparable.swift */; };
+		CF26AC370608EB0985162BBD505152FA /* Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0704AC07955E834AB9529BC3B605B12E /* Int.swift */; };
+		D5C2A25E01EFF2C6FA36E875CF8C1519 /* APIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0879F8DA6A4FE847EA35A8CFB651119 /* APIObject.swift */; };
+		D9FEA21AED0C81A283CBF535BEDD1513 /* SingleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66A307776C1281B3E36A8DE09DBCD44 /* SingleStatus.swift */; };
+		E747078FD6D39F229C85D11B7FC660F8 /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F78FF6E80F2A630EBE030F298F98233 /* OAuth.swift */; };
+		E7A8AEAE586B01DF8F23B775111827E2 /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2498C7AAC948879A3CA54031247321 /* Functional.swift */; };
+		E83F9886736F970B855ABF9924B3973D /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB163088DA2CA51203662193857661E /* Binding.swift */; };
+		ED0C5BCEE1F50459A5FF2A6F2C0033BE /* Pods-Spotify2AppleMusic-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FFF9E363A8377813272B6949D660513E /* Pods-Spotify2AppleMusic-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE7D94B8A1C28B78DC4311C08F5EB534 /* FailableBulkPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB584F9E114A28E546393A660BF6644 /* FailableBulkPromise.swift */; };
+		EF24559D5F8F13A39444FD0C4928F348 /* RefreshableAPIObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0745D6EAED5385D9D7EF211AFDB91665 /* RefreshableAPIObject.swift */; };
+		F203C4AC0338C618CBC6157D420752AE /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0BCD058CD0E6C4D5014848D3318DB5E /* Date.swift */; };
+		F28F559B775D685531B3933291C122F6 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518684F4C1A94BE3DFD3E30C0D7F1BEF /* Constraint.swift */; };
+		F41F5F216DC583BC1A4159B75E3C7CA1 /* Sweeft-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E9EE5D08CC9973700C33D6D7D4DAA2F /* Sweeft-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9FDA997063DF9185D227F8FDD4B912E /* PromiseSetterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A64F9BCFB02EC3C3E8C70D5DBB79F1 /* PromiseSetterProtocol.swift */; };
+		FAF7DE073753BE345FDF43C3871D1BAF /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505C3FB06B3306C42B27362F0D1C2078 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,75 +96,96 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		006120FE05DC3D40F7162704D8DB8527 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = "Sources/Sweeft/Observer Pattern/Observable.swift"; sourceTree = "<group>"; };
-		04A66EC96A75C32A2221FBC5034269D1 /* Pods-Spotify2AppleMusic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spotify2AppleMusic-resources.sh"; sourceTree = "<group>"; };
-		0F7E5C53321842A21BB6DD99D9BA8033 /* BulkPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulkPromise.swift; path = Sources/Sweeft/Promises/BulkPromise.swift; sourceTree = "<group>"; };
-		10FC87276BE92FB1D7EB6E6505E3D8B9 /* StatusFetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusFetcher.swift; path = Sources/Sweeft/UserDefaults/StatusFetcher.swift; sourceTree = "<group>"; };
-		112859B905039D8CC64126605899D3E2 /* Pods_Spotify2AppleMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Spotify2AppleMusic.framework; path = "Pods-Spotify2AppleMusic.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1790E0D848CF35122591DD274410454F /* Pods-Spotify2AppleMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spotify2AppleMusic-acknowledgements.plist"; sourceTree = "<group>"; };
-		19CC9933BAC77131F7A31C964C7EC3C2 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Sweeft/Promises/Promise.swift; sourceTree = "<group>"; };
-		1B95A3649868183F181D69265133EB31 /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Sources/Sweeft/Extensions/Bool.swift; sourceTree = "<group>"; };
-		1C0BB3B1DD2D1EB29F0528412D679DDE /* Sweeft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sweeft-prefix.pch"; sourceTree = "<group>"; };
-		1FAE5582AA91EC12F6694DB5E8D98B57 /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Sources/Sweeft/Networking/API.swift; sourceTree = "<group>"; };
-		22D884C7FEB56D9C7965B25EFD89C62D /* Sweeft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sweeft-dummy.m"; sourceTree = "<group>"; };
-		27BE21BF64816465A6781E03C5A24755 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Sources/Sweeft/PriorityQueue.swift; sourceTree = "<group>"; };
-		291E015DC7A63FF5D4EEC4A22D898E5C /* Status.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Status.swift; path = Sources/Sweeft/UserDefaults/Status.swift; sourceTree = "<group>"; };
-		29B6E42687BBE8C0E93FB4B5727A3EFE /* CSP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSP.swift; path = Sources/Sweeft/ConstraintSatisfaction/CSP.swift; sourceTree = "<group>"; };
-		2F182A6797E3E0D5A7AC6F02512A25A0 /* Other.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Other.swift; path = Sources/Sweeft/Other.swift; sourceTree = "<group>"; };
-		326857ECAD38777E3123E5957F1843A0 /* OAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth.swift; path = Sources/Sweeft/Networking/OAuth.swift; sourceTree = "<group>"; };
-		3897F3D32DCA07DFB6509250B6548290 /* Pods-Spotify2AppleMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spotify2AppleMusic-umbrella.h"; sourceTree = "<group>"; };
-		38F750E51EA6AD1F5A68E175E6E7E411 /* Node.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Node.swift; path = Sources/Sweeft/Graphs/Node.swift; sourceTree = "<group>"; };
-		39FF4770A6F3ABF2E088D4579AEDDF95 /* Graph.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Graph.swift; path = Sources/Sweeft/Graphs/Graph.swift; sourceTree = "<group>"; };
-		3CA29BD11A64E2E3D2E4165B3A7D7DE8 /* Pods-Spotify2AppleMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Spotify2AppleMusic.modulemap"; sourceTree = "<group>"; };
-		3DC540FA2F656029106CB48D83CC28C7 /* Pods-Spotify2AppleMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spotify2AppleMusic-frameworks.sh"; sourceTree = "<group>"; };
-		42392BE2081E4021273F61D238731EDE /* StatusKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusKey.swift; path = Sources/Sweeft/UserDefaults/StatusKey.swift; sourceTree = "<group>"; };
-		42998ECA796A4AE02CDAD6FD14F63E6B /* ReducingParametersOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReducingParametersOperators.swift; path = Sources/Sweeft/Operators/ReducingParametersOperators.swift; sourceTree = "<group>"; };
-		43058FA3798A82A50E68312807A313B4 /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Sweeft/Extensions/Date.swift; sourceTree = "<group>"; };
-		467047BE9EFCA6C71C96F27829DF21A6 /* Sweeft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sweeft-umbrella.h"; sourceTree = "<group>"; };
-		495B1754C31B55C97E0300B4DAE7D8E1 /* Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = Sources/Sweeft/Extensions/Collection.swift; sourceTree = "<group>"; };
-		4A804E88DE0A176BE2CFA4FE82C1B93E /* Binding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binding.swift; path = "Sources/Sweeft/Observer Pattern/Binding.swift"; sourceTree = "<group>"; };
-		4ABB8ABE55E1646C316F0C4997D3498F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		502CA5F79E2D8E032FAE4CA13647F40C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		51621D3834F2A73D4E3299473C83DFA9 /* DataRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRepresentable.swift; path = Sources/Sweeft/Networking/DataRepresentable.swift; sourceTree = "<group>"; };
-		54CE64C120EB9321F68ABBEF2E7EA3C4 /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Sources/Sweeft/Networking/Auth.swift; sourceTree = "<group>"; };
-		5512CCF958B60FD83757E131DD02940D /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Sweeft/Extensions/Array.swift; sourceTree = "<group>"; };
-		56AAEFCEEED70EEC5CCDEE5174C19E51 /* ObjectStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObjectStatus.swift; path = Sources/Sweeft/UserDefaults/ObjectStatus.swift; sourceTree = "<group>"; };
-		5AC2704C1CAA9413CEA890B839A8CF60 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Sweeft/Networking/Mappable.swift; sourceTree = "<group>"; };
-		6D4CDAC4ABE5DEE6E832119485AEE15E /* ArrayOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayOperators.swift; path = Sources/Sweeft/Operators/ArrayOperators.swift; sourceTree = "<group>"; };
-		6F2C376AAE5B0A7240B704716A4FAFFF /* Pods-Spotify2AppleMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spotify2AppleMusic-dummy.m"; sourceTree = "<group>"; };
-		6F8A9E2BB6F57B87DA01D61E1A7EA94F /* APIEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIEndpoint.swift; path = Sources/Sweeft/Networking/APIEndpoint.swift; sourceTree = "<group>"; };
-		751C6CEBB1C776C2BC064AB2AF5EE956 /* MultithreadingOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultithreadingOperators.swift; path = Sources/Sweeft/Operators/MultithreadingOperators.swift; sourceTree = "<group>"; };
-		791A2E64B0BF5E741EB84511CFA1F669 /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Sources/Sweeft/Extensions/Int.swift; sourceTree = "<group>"; };
-		8485254C7B21081CC5A62DAD9363D224 /* Mutlithreading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutlithreading.swift; path = Sources/Sweeft/Mutlithreading.swift; sourceTree = "<group>"; };
-		8A6FD786400A4CBA092879B7670DACFC /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/Sweeft/Extensions/String.swift; sourceTree = "<group>"; };
-		8E7BB358E669A023A029E8B0CEE9A306 /* Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grant.swift; path = Sources/Sweeft/Networking/Grant.swift; sourceTree = "<group>"; };
-		8FEF7E4DEB0E52E42BDF3741B9305F03 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Sweeft/Operators/Functional.swift; sourceTree = "<group>"; };
-		8FF26398C62928EAA84E6E9D64D972C5 /* StatusSerializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusSerializable.swift; path = Sources/Sweeft/UserDefaults/StatusSerializable.swift; sourceTree = "<group>"; };
-		91BE9BBD8BB8B2E85BF11C5BD4671D86 /* PromiseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseHandler.swift; path = Sources/Sweeft/Promises/PromiseHandler.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		964EC468A3E73718F7E9D6D6A344E23B /* Set.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Sources/Sweeft/Extensions/Set.swift; sourceTree = "<group>"; };
-		97066F846C9258DC8B134F68D2F6A85E /* Sweeft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Sweeft.modulemap; sourceTree = "<group>"; };
-		9ACEDDF617E6E1FD50D9BE795B5C03DF /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Sweeft/Extensions/Optional.swift; sourceTree = "<group>"; };
-		9C3AF6E56866442923668E96D220FF51 /* Defaultable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaultable.swift; path = Sources/Sweeft/Defaultable.swift; sourceTree = "<group>"; };
-		A265A38D0D51D42A655076A323077F86 /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = Sources/Sweeft/Extensions/Double.swift; sourceTree = "<group>"; };
-		AD3AE8A9FFD308DF2E1C48D8E1FF4472 /* Assignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assignment.swift; path = Sources/Sweeft/Operators/Assignment.swift; sourceTree = "<group>"; };
-		B47C43B5C348BED7C9C35FEBFFCC8C9A /* URL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URL.swift; path = Sources/Sweeft/Extensions/URL.swift; sourceTree = "<group>"; };
-		B78E61F6C8615D533CBA91746147F772 /* Sweeft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sweeft.xcconfig; sourceTree = "<group>"; };
-		C6927A0F362E1004C9369BB2FB3942A4 /* Pods-Spotify2AppleMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spotify2AppleMusic.debug.xcconfig"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D6A9E58A485D8F9595276A27D0B72F70 /* VariableInstance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VariableInstance.swift; path = Sources/Sweeft/ConstraintSatisfaction/VariableInstance.swift; sourceTree = "<group>"; };
-		D943428C3E236E71C8AD9304EC57075A /* OAuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthManager.swift; path = Sources/Sweeft/Networking/OAuthManager.swift; sourceTree = "<group>"; };
-		DE125B97BFC6B655FA60717ABBB37696 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Sources/Sweeft/Operators/Math.swift; sourceTree = "<group>"; };
-		E248AA441704AB2B033F83538E825408 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Sweeft/Extensions/Dictionary.swift; sourceTree = "<group>"; };
-		E34062A19922E1570E1E942F0097D82E /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Sweeft/ConstraintSatisfaction/Constraint.swift; sourceTree = "<group>"; };
-		ECB3D5373E32EB3465801C507EE27188 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Sweeft/Networking/JSON.swift; sourceTree = "<group>"; };
-		EDDA8A5C6A63FEBA9722238B20A93640 /* Pods-Spotify2AppleMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Spotify2AppleMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
-		EEA55C36F24460A541192942D61CA7DB /* ValueComparable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueComparable.swift; path = Sources/Sweeft/ValueComparable.swift; sourceTree = "<group>"; };
-		F1A210EC9D8B9274A3171BE33F5AA460 /* Sweeft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Sweeft.framework; path = Sweeft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1DF6C119B12BFA658DB5CA00D0EE4D3 /* APIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = Sources/Sweeft/Networking/APIError.swift; sourceTree = "<group>"; };
-		F215804141F204C06475AADBD1F2DA91 /* ReducingParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReducingParameters.swift; path = Sources/Sweeft/ReducingParameters.swift; sourceTree = "<group>"; };
-		F49E20A51BB2868302CD3DBF3AF27D35 /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/Sweeft/Extensions/Data.swift; sourceTree = "<group>"; };
-		FA499D131DE6CEC80BC1F69D5E6E65C1 /* Pods-Spotify2AppleMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spotify2AppleMusic.release.xcconfig"; sourceTree = "<group>"; };
+		035D3767D51EA0BD8D74AA5CDB6C4AF7 /* MultithreadingOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultithreadingOperators.swift; path = Sources/Sweeft/Operators/MultithreadingOperators.swift; sourceTree = "<group>"; };
+		06876296A26D36456168B302E73D5945 /* OAuthManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthManager.swift; path = Sources/Sweeft/Networking/Authentication/OAuthManager.swift; sourceTree = "<group>"; };
+		0704AC07955E834AB9529BC3B605B12E /* Int.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Int.swift; path = Sources/Sweeft/Extensions/Int.swift; sourceTree = "<group>"; };
+		0745D6EAED5385D9D7EF211AFDB91665 /* RefreshableAPIObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RefreshableAPIObject.swift; path = Sources/Sweeft/Networking/Objects/RefreshableAPIObject.swift; sourceTree = "<group>"; };
+		0749EB82385A0639010F8ACB5EE80A51 /* Pods-Spotify2AppleMusic-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Spotify2AppleMusic-acknowledgements.markdown"; sourceTree = "<group>"; };
+		07748C6E817D8DA4D5C6A26922F6F3B2 /* Pods-Spotify2AppleMusic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spotify2AppleMusic.debug.xcconfig"; sourceTree = "<group>"; };
+		0C155250B271B2739435DE301189C50C /* GenerizableError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GenerizableError.swift; path = Sources/Sweeft/GenerizableError.swift; sourceTree = "<group>"; };
+		0C34FA7CD6052C058ADF4F31D5D1EB39 /* ArrayOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArrayOperators.swift; path = Sources/Sweeft/Operators/ArrayOperators.swift; sourceTree = "<group>"; };
+		0C7C8FE2EBBEBAEABE664921DCFBBFE5 /* Bool.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Bool.swift; path = Sources/Sweeft/Extensions/Bool.swift; sourceTree = "<group>"; };
+		0EDA2D94E9C505FE5C9DB39DD1B821E1 /* SettablePromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettablePromise.swift; path = Sources/Sweeft/Promises/Subclasses/SettablePromise.swift; sourceTree = "<group>"; };
+		112859B905039D8CC64126605899D3E2 /* Pods_Spotify2AppleMusic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Spotify2AppleMusic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		19D9FBA5D309454D415FEEE96FD20577 /* Pods-Spotify2AppleMusic-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spotify2AppleMusic-frameworks.sh"; sourceTree = "<group>"; };
+		1B5371B0D0B91128413B2D33F74DBAF5 /* API.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = API.swift; path = Sources/Sweeft/Networking/Definition/API.swift; sourceTree = "<group>"; };
+		1C29D5629B6CDD66AA3D4B597416B481 /* PromiseState.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseState.swift; path = Sources/Sweeft/Promises/Implementation/PromiseState.swift; sourceTree = "<group>"; };
+		1F9B100929FA01ACBA4E96BFE2609B5B /* Keychain.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Keychain.swift; path = Sources/Sweeft/UserDefaults/Keychain.swift; sourceTree = "<group>"; };
+		262DF0FA20D7E30B6C38996FDFBA14D1 /* Double.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Double.swift; path = Sources/Sweeft/Extensions/Double.swift; sourceTree = "<group>"; };
+		27F80A9CE0EAAE77D23FD1DF00997146 /* Other.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Other.swift; path = Sources/Sweeft/Other.swift; sourceTree = "<group>"; };
+		2A890C12A82415AB10F3147C413CAB84 /* DataRepresentable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRepresentable.swift; path = Sources/Sweeft/Networking/Model/DataRepresentable.swift; sourceTree = "<group>"; };
+		2B4AFF6DBB7991033BD91AEB209DA01F /* Sweeft.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Sweeft.xcconfig; sourceTree = "<group>"; };
+		3DB163088DA2CA51203662193857661E /* Binding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Binding.swift; path = "Sources/Sweeft/Observer Pattern/Binding.swift"; sourceTree = "<group>"; };
+		3E9EE5D08CC9973700C33D6D7D4DAA2F /* Sweeft-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sweeft-umbrella.h"; sourceTree = "<group>"; };
+		3EBECB17AA0C01ED5B4873EE1D0D737B /* PromiseProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseProtocol.swift; path = Sources/Sweeft/Promises/Protocols/PromiseProtocol.swift; sourceTree = "<group>"; };
+		3F2498C7AAC948879A3CA54031247321 /* Functional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Functional.swift; path = Sources/Sweeft/Operators/Functional.swift; sourceTree = "<group>"; };
+		42549EACE7989C08ADDCAEA371429A54 /* Sweeft-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Sweeft-prefix.pch"; sourceTree = "<group>"; };
+		42CD264B9951FF70734BACCC023837F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4325415E55FA0278EFA3C55E8162D450 /* Promise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Promise.swift; path = Sources/Sweeft/Promises/Implementation/Promise.swift; sourceTree = "<group>"; };
+		43C87B215E8EE27C85CC1DA05BA3A7C2 /* Pods-Spotify2AppleMusic.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Spotify2AppleMusic.modulemap"; sourceTree = "<group>"; };
+		45CD6FFD3B93BB804F1C61E880BFCB89 /* DelegatedAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DelegatedAPI.swift; path = Sources/Sweeft/Networking/Custom/DelegatedAPI.swift; sourceTree = "<group>"; };
+		4655F4D09CE4565E6F65CB0E9D50883D /* APIError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIError.swift; path = Sources/Sweeft/Networking/Definition/APIError.swift; sourceTree = "<group>"; };
+		481CF4D2B972EFDC62B82CF4BBAD4875 /* PromiseProtocolConformance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseProtocolConformance.swift; path = Sources/Sweeft/Promises/Implementation/PromiseProtocolConformance.swift; sourceTree = "<group>"; };
+		482F4EE57EAE2F71EA8EA7B319ACDA80 /* MultiFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultiFormData.swift; path = Sources/Sweeft/Networking/Model/MultiFormData.swift; sourceTree = "<group>"; };
+		4CCB2BE2478FDABB972F60EAA288E434 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/Sweeft/Networking/Definition/HTTPMethod.swift; sourceTree = "<group>"; };
+		505C3FB06B3306C42B27362F0D1C2078 /* Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Collection.swift; path = Sources/Sweeft/Extensions/Collection.swift; sourceTree = "<group>"; };
+		518684F4C1A94BE3DFD3E30C0D7F1BEF /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Sources/Sweeft/ConstraintSatisfaction/Constraint.swift; sourceTree = "<group>"; };
+		5463CD59313F0856E4B4E11C5EE09722 /* ValueComparable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValueComparable.swift; path = Sources/Sweeft/ValueComparable.swift; sourceTree = "<group>"; };
+		5470DA05FA2CDA1A1BCE3762FC69D685 /* JSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSON.swift; path = Sources/Sweeft/Networking/Helper/JSON.swift; sourceTree = "<group>"; };
+		582BE0819EAA66EAD2CA55FA0E1ED9D3 /* BulkPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BulkPromise.swift; path = Sources/Sweeft/Promises/Subclasses/BulkPromise.swift; sourceTree = "<group>"; };
+		5C519F1365594E4D4D17307312F8AF43 /* Sweeft-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Sweeft-dummy.m"; sourceTree = "<group>"; };
+		5CC16903CA79CB614FD2A6FF98D07B26 /* APIObjectWithDetail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIObjectWithDetail.swift; path = Sources/Sweeft/Networking/Objects/APIObjectWithDetail.swift; sourceTree = "<group>"; };
+		5E12BAA68FDF276218F5205A2F8EF0F4 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = Sources/Sweeft/UserDefaults/Storage.swift; sourceTree = "<group>"; };
+		61A241CA96D612916013C61CB45752EE /* ErrorHandling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ErrorHandling.swift; path = Sources/Sweeft/Promises/ErrorHandling.swift; sourceTree = "<group>"; };
+		64C073CF591D2C6538417715BA2B2CF3 /* Pods-Spotify2AppleMusic-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Spotify2AppleMusic-dummy.m"; sourceTree = "<group>"; };
+		68B9983C1D5047F46E01DB50C996FF74 /* PriorityQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PriorityQueue.swift; path = Sources/Sweeft/PriorityQueue.swift; sourceTree = "<group>"; };
+		6A6778C01DC13D37137EC9F11C469F63 /* VariableInstance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VariableInstance.swift; path = Sources/Sweeft/ConstraintSatisfaction/VariableInstance.swift; sourceTree = "<group>"; };
+		6BE9C0249D6A15971C7C6BED7EED4707 /* Pods-Spotify2AppleMusic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Spotify2AppleMusic.release.xcconfig"; sourceTree = "<group>"; };
+		6E7B3F0E0624EE85F74B22F796A6D64A /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Sweeft/Networking/Model/Mappable.swift; sourceTree = "<group>"; };
+		6F78FF6E80F2A630EBE030F298F98233 /* OAuth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuth.swift; path = Sources/Sweeft/Networking/Authentication/OAuth.swift; sourceTree = "<group>"; };
+		797A9126D859FF4EFCDC5BCB6F1C8968 /* APIResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIResponse.swift; path = Sources/Sweeft/Networking/Definition/APIResponse.swift; sourceTree = "<group>"; };
+		7BA0B36EB94A612F2C97181360BD3025 /* ReducingParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReducingParameters.swift; path = Sources/Sweeft/ReducingParameters.swift; sourceTree = "<group>"; };
+		7E647292537460FB18AC8521E2E41DFE /* Data.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Sources/Sweeft/Extensions/Data.swift; sourceTree = "<group>"; };
+		80AFB514F847A30399FF496CAC897068 /* Status.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Status.swift; path = Sources/Sweeft/UserDefaults/Status.swift; sourceTree = "<group>"; };
+		83A2B47AB92C3BA45EE69B9280F0F10F /* Defaultable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Defaultable.swift; path = Sources/Sweeft/Defaultable.swift; sourceTree = "<group>"; };
+		85A4E36704B378F348F2E2352E0D1F2B /* CustomAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomAPI.swift; path = Sources/Sweeft/Networking/Custom/CustomAPI.swift; sourceTree = "<group>"; };
+		8AD186A2F3CE50D995C696759866DB2C /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = "Sources/Sweeft/Observer Pattern/Observable.swift"; sourceTree = "<group>"; };
+		91A64F9BCFB02EC3C3E8C70D5DBB79F1 /* PromiseSetterProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseSetterProtocol.swift; path = Sources/Sweeft/Promises/Protocols/PromiseSetterProtocol.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		94B69D0C8BAB2C08993A6E34B048C215 /* Set.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Set.swift; path = Sources/Sweeft/Extensions/Set.swift; sourceTree = "<group>"; };
+		964699D1F84EA9732FCDAFBD15E65899 /* Assignment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Assignment.swift; path = Sources/Sweeft/Operators/Assignment.swift; sourceTree = "<group>"; };
+		9A0970D9952CADF8A976295B6156B911 /* APIEndpoint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIEndpoint.swift; path = Sources/Sweeft/Networking/Definition/APIEndpoint.swift; sourceTree = "<group>"; };
+		9A3758BBDF6CF9276135C5B24CE2A85E /* CSP.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CSP.swift; path = Sources/Sweeft/ConstraintSatisfaction/CSP.swift; sourceTree = "<group>"; };
+		9AC1310D84BCB36B4828107DF8244B8A /* Array.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Array.swift; path = Sources/Sweeft/Extensions/Array.swift; sourceTree = "<group>"; };
+		9C7C33AA9AED623DFB90BC1F38A50639 /* Dictionary.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionary.swift; path = Sources/Sweeft/Extensions/Dictionary.swift; sourceTree = "<group>"; };
+		9C9D792D757813E2BB097F2BA9002917 /* Sweeft.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Sweeft.modulemap; sourceTree = "<group>"; };
+		9F0BCA69C2A8909DCD6A6CEF547944FB /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0879F8DA6A4FE847EA35A8CFB651119 /* APIObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = APIObject.swift; path = Sources/Sweeft/Networking/Objects/APIObject.swift; sourceTree = "<group>"; };
+		A0BCD058CD0E6C4D5014848D3318DB5E /* Date.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Date.swift; path = Sources/Sweeft/Extensions/Date.swift; sourceTree = "<group>"; };
+		A406F2B2791523AD647E80F2003BD5A8 /* Pods-Spotify2AppleMusic-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Spotify2AppleMusic-resources.sh"; sourceTree = "<group>"; };
+		A57E950C20681614158F6C7DE95B0D22 /* Math.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Math.swift; path = Sources/Sweeft/Operators/Math.swift; sourceTree = "<group>"; };
+		A67E7FD488934E517030A19C53D5CE3E /* Auth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Auth.swift; path = Sources/Sweeft/Networking/Authentication/Auth.swift; sourceTree = "<group>"; };
+		B3138C1F66986853B1A73C0D65AB0791 /* PromiseSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PromiseSetter.swift; path = Sources/Sweeft/Promises/Implementation/PromiseSetter.swift; sourceTree = "<group>"; };
+		B66A307776C1281B3E36A8DE09DBCD44 /* SingleStatus.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SingleStatus.swift; path = Sources/Sweeft/UserDefaults/SingleStatus.swift; sourceTree = "<group>"; };
+		B7E45D93254D3055BFF9E4E54E9190C9 /* Cache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Cache.swift; path = Sources/Sweeft/Networking/Helper/Cache.swift; sourceTree = "<group>"; };
+		BD1AD46FEFF1C93EE390FA8DD6382CA6 /* RetryPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPromise.swift; path = Sources/Sweeft/Promises/Subclasses/RetryPromise.swift; sourceTree = "<group>"; };
+		BF67675E64FDECBA248F33E29EC876F2 /* ReducingParametersOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReducingParametersOperators.swift; path = Sources/Sweeft/Operators/ReducingParametersOperators.swift; sourceTree = "<group>"; };
+		C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		C1B4FEE437AE56DCA13D68E60EA17BCE /* OAuthAPI.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OAuthAPI.swift; path = Sources/Sweeft/Networking/Custom/OAuthAPI.swift; sourceTree = "<group>"; };
+		C9DC2A28F3718A83D3F78EEE5F8A72CE /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Sources/Sweeft/Extensions/Optional.swift; sourceTree = "<group>"; };
+		CF59202D0402769665EEE912FA04FF80 /* Dispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dispatcher.swift; path = Sources/Sweeft/Promises/Protocols/Dispatcher.swift; sourceTree = "<group>"; };
+		DBB2F3B61762EC2B7AA8061D032C99DE /* StatusKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StatusKey.swift; path = Sources/Sweeft/UserDefaults/StatusKey.swift; sourceTree = "<group>"; };
+		DBB584F9E114A28E546393A660BF6644 /* FailableBulkPromise.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FailableBulkPromise.swift; path = Sources/Sweeft/Promises/Subclasses/FailableBulkPromise.swift; sourceTree = "<group>"; };
+		DFACB79F25C870E9C023360888B7635E /* WebForm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WebForm.swift; path = Sources/Sweeft/Networking/Model/WebForm.swift; sourceTree = "<group>"; };
+		E3F66ED0644E3B8CD6F8442A66C83555 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Sweeft/Result.swift; sourceTree = "<group>"; };
+		EBA076CA3D69A5294F91635A396D77E3 /* Pods-Spotify2AppleMusic-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Spotify2AppleMusic-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE66DE0852513618BCF89537748DD1B4 /* Mutlithreading.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mutlithreading.swift; path = Sources/Sweeft/Mutlithreading.swift; sourceTree = "<group>"; };
+		F1A210EC9D8B9274A3171BE33F5AA460 /* Sweeft.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Sweeft.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F543F71ECEDCD23DC312695167A6CEF9 /* Grant.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Grant.swift; path = Sources/Sweeft/Networking/Authentication/Grant.swift; sourceTree = "<group>"; };
+		FAF06051EEF512C46C4F4C1D23714867 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = String.swift; path = Sources/Sweeft/Extensions/String.swift; sourceTree = "<group>"; };
+		FBDC741CB47DADDCAA3B3DC311FF6642 /* URL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URL.swift; path = Sources/Sweeft/Extensions/URL.swift; sourceTree = "<group>"; };
+		FFF9E363A8377813272B6949D660513E /* Pods-Spotify2AppleMusic-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Spotify2AppleMusic-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,59 +193,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523696392627023428D5F6B9DE17FC31 /* Foundation.framework in Frameworks */,
+				0B4B656CEDAF74FEE8F6EFB8D625CEF7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3165DCB7D5536445F6278CACE35B17C6 /* Frameworks */ = {
+		E0461793880E4978946E4B329AB359F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66EBBD13426A7CD070888D35D966FB91 /* Foundation.framework in Frameworks */,
+				6F5834C5F96033523A3556EFF5992675 /* Foundation.framework in Frameworks */,
+				15BE1785010AAC4AF10FED7BB302995B /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0ABADFC394B32B2E32F0E75E44F5D3CB /* Support Files */ = {
+		0A31AA68F53FAC6BBD949325E46C44C3 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4ABB8ABE55E1646C316F0C4997D3498F /* Info.plist */,
-				97066F846C9258DC8B134F68D2F6A85E /* Sweeft.modulemap */,
-				B78E61F6C8615D533CBA91746147F772 /* Sweeft.xcconfig */,
-				22D884C7FEB56D9C7965B25EFD89C62D /* Sweeft-dummy.m */,
-				1C0BB3B1DD2D1EB29F0528412D679DDE /* Sweeft-prefix.pch */,
-				467047BE9EFCA6C71C96F27829DF21A6 /* Sweeft-umbrella.h */,
+				9F0BCA69C2A8909DCD6A6CEF547944FB /* Info.plist */,
+				9C9D792D757813E2BB097F2BA9002917 /* Sweeft.modulemap */,
+				2B4AFF6DBB7991033BD91AEB209DA01F /* Sweeft.xcconfig */,
+				5C519F1365594E4D4D17307312F8AF43 /* Sweeft-dummy.m */,
+				42549EACE7989C08ADDCAEA371429A54 /* Sweeft-prefix.pch */,
+				3E9EE5D08CC9973700C33D6D7D4DAA2F /* Sweeft-umbrella.h */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Sweeft";
 			sourceTree = "<group>";
 		};
-		36ACB36C2BD5000140C38998936568CB /* Pods */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A3849249613A7BAA0517F6AD165097CC /* Sweeft */,
+				4F990579C2E52276FD3C28227B49D60B /* iOS */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4EF8B92DFC64D5C8CBBD81FF6EEC955A /* Pods-Spotify2AppleMusic */ = {
+		4F990579C2E52276FD3C28227B49D60B /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				502CA5F79E2D8E032FAE4CA13647F40C /* Info.plist */,
-				3CA29BD11A64E2E3D2E4165B3A7D7DE8 /* Pods-Spotify2AppleMusic.modulemap */,
-				EDDA8A5C6A63FEBA9722238B20A93640 /* Pods-Spotify2AppleMusic-acknowledgements.markdown */,
-				1790E0D848CF35122591DD274410454F /* Pods-Spotify2AppleMusic-acknowledgements.plist */,
-				6F2C376AAE5B0A7240B704716A4FAFFF /* Pods-Spotify2AppleMusic-dummy.m */,
-				3DC540FA2F656029106CB48D83CC28C7 /* Pods-Spotify2AppleMusic-frameworks.sh */,
-				04A66EC96A75C32A2221FBC5034269D1 /* Pods-Spotify2AppleMusic-resources.sh */,
-				3897F3D32DCA07DFB6509250B6548290 /* Pods-Spotify2AppleMusic-umbrella.h */,
-				C6927A0F362E1004C9369BB2FB3942A4 /* Pods-Spotify2AppleMusic.debug.xcconfig */,
-				FA499D131DE6CEC80BC1F69D5E6E65C1 /* Pods-Spotify2AppleMusic.release.xcconfig */,
+				11C10A31CD5CFA3EFE266394471B152E /* Foundation.framework */,
+				C085E02FF89804F50ADDA04F5A586E94 /* Security.framework */,
 			);
-			name = "Pods-Spotify2AppleMusic";
-			path = "Target Support Files/Pods-Spotify2AppleMusic";
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		62EC2E50CD3E80086AF7ED2A91050B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68BB97C593FA91D3C1045AA071739E61 /* Sweeft */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		6831D1795ADA363F646023916129B017 /* Products */ = {
@@ -215,95 +257,116 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		68BB97C593FA91D3C1045AA071739E61 /* Sweeft */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				1B5371B0D0B91128413B2D33F74DBAF5 /* API.swift */,
+				9A0970D9952CADF8A976295B6156B911 /* APIEndpoint.swift */,
+				4655F4D09CE4565E6F65CB0E9D50883D /* APIError.swift */,
+				A0879F8DA6A4FE847EA35A8CFB651119 /* APIObject.swift */,
+				5CC16903CA79CB614FD2A6FF98D07B26 /* APIObjectWithDetail.swift */,
+				797A9126D859FF4EFCDC5BCB6F1C8968 /* APIResponse.swift */,
+				9AC1310D84BCB36B4828107DF8244B8A /* Array.swift */,
+				0C34FA7CD6052C058ADF4F31D5D1EB39 /* ArrayOperators.swift */,
+				964699D1F84EA9732FCDAFBD15E65899 /* Assignment.swift */,
+				A67E7FD488934E517030A19C53D5CE3E /* Auth.swift */,
+				3DB163088DA2CA51203662193857661E /* Binding.swift */,
+				0C7C8FE2EBBEBAEABE664921DCFBBFE5 /* Bool.swift */,
+				582BE0819EAA66EAD2CA55FA0E1ED9D3 /* BulkPromise.swift */,
+				B7E45D93254D3055BFF9E4E54E9190C9 /* Cache.swift */,
+				505C3FB06B3306C42B27362F0D1C2078 /* Collection.swift */,
+				518684F4C1A94BE3DFD3E30C0D7F1BEF /* Constraint.swift */,
+				9A3758BBDF6CF9276135C5B24CE2A85E /* CSP.swift */,
+				85A4E36704B378F348F2E2352E0D1F2B /* CustomAPI.swift */,
+				7E647292537460FB18AC8521E2E41DFE /* Data.swift */,
+				2A890C12A82415AB10F3147C413CAB84 /* DataRepresentable.swift */,
+				A0BCD058CD0E6C4D5014848D3318DB5E /* Date.swift */,
+				83A2B47AB92C3BA45EE69B9280F0F10F /* Defaultable.swift */,
+				45CD6FFD3B93BB804F1C61E880BFCB89 /* DelegatedAPI.swift */,
+				9C7C33AA9AED623DFB90BC1F38A50639 /* Dictionary.swift */,
+				CF59202D0402769665EEE912FA04FF80 /* Dispatcher.swift */,
+				262DF0FA20D7E30B6C38996FDFBA14D1 /* Double.swift */,
+				61A241CA96D612916013C61CB45752EE /* ErrorHandling.swift */,
+				DBB584F9E114A28E546393A660BF6644 /* FailableBulkPromise.swift */,
+				3F2498C7AAC948879A3CA54031247321 /* Functional.swift */,
+				0C155250B271B2739435DE301189C50C /* GenerizableError.swift */,
+				F543F71ECEDCD23DC312695167A6CEF9 /* Grant.swift */,
+				4CCB2BE2478FDABB972F60EAA288E434 /* HTTPMethod.swift */,
+				0704AC07955E834AB9529BC3B605B12E /* Int.swift */,
+				5470DA05FA2CDA1A1BCE3762FC69D685 /* JSON.swift */,
+				1F9B100929FA01ACBA4E96BFE2609B5B /* Keychain.swift */,
+				6E7B3F0E0624EE85F74B22F796A6D64A /* Mappable.swift */,
+				A57E950C20681614158F6C7DE95B0D22 /* Math.swift */,
+				482F4EE57EAE2F71EA8EA7B319ACDA80 /* MultiFormData.swift */,
+				035D3767D51EA0BD8D74AA5CDB6C4AF7 /* MultithreadingOperators.swift */,
+				EE66DE0852513618BCF89537748DD1B4 /* Mutlithreading.swift */,
+				6F78FF6E80F2A630EBE030F298F98233 /* OAuth.swift */,
+				C1B4FEE437AE56DCA13D68E60EA17BCE /* OAuthAPI.swift */,
+				06876296A26D36456168B302E73D5945 /* OAuthManager.swift */,
+				8AD186A2F3CE50D995C696759866DB2C /* Observable.swift */,
+				C9DC2A28F3718A83D3F78EEE5F8A72CE /* Optional.swift */,
+				27F80A9CE0EAAE77D23FD1DF00997146 /* Other.swift */,
+				68B9983C1D5047F46E01DB50C996FF74 /* PriorityQueue.swift */,
+				4325415E55FA0278EFA3C55E8162D450 /* Promise.swift */,
+				3EBECB17AA0C01ED5B4873EE1D0D737B /* PromiseProtocol.swift */,
+				481CF4D2B972EFDC62B82CF4BBAD4875 /* PromiseProtocolConformance.swift */,
+				B3138C1F66986853B1A73C0D65AB0791 /* PromiseSetter.swift */,
+				91A64F9BCFB02EC3C3E8C70D5DBB79F1 /* PromiseSetterProtocol.swift */,
+				1C29D5629B6CDD66AA3D4B597416B481 /* PromiseState.swift */,
+				7BA0B36EB94A612F2C97181360BD3025 /* ReducingParameters.swift */,
+				BF67675E64FDECBA248F33E29EC876F2 /* ReducingParametersOperators.swift */,
+				0745D6EAED5385D9D7EF211AFDB91665 /* RefreshableAPIObject.swift */,
+				E3F66ED0644E3B8CD6F8442A66C83555 /* Result.swift */,
+				BD1AD46FEFF1C93EE390FA8DD6382CA6 /* RetryPromise.swift */,
+				94B69D0C8BAB2C08993A6E34B048C215 /* Set.swift */,
+				0EDA2D94E9C505FE5C9DB39DD1B821E1 /* SettablePromise.swift */,
+				B66A307776C1281B3E36A8DE09DBCD44 /* SingleStatus.swift */,
+				80AFB514F847A30399FF496CAC897068 /* Status.swift */,
+				DBB2F3B61762EC2B7AA8061D032C99DE /* StatusKey.swift */,
+				5E12BAA68FDF276218F5205A2F8EF0F4 /* Storage.swift */,
+				FAF06051EEF512C46C4F4C1D23714867 /* String.swift */,
+				FBDC741CB47DADDCAA3B3DC311FF6642 /* URL.swift */,
+				5463CD59313F0856E4B4E11C5EE09722 /* ValueComparable.swift */,
+				6A6778C01DC13D37137EC9F11C469F63 /* VariableInstance.swift */,
+				DFACB79F25C870E9C023360888B7635E /* WebForm.swift */,
+				0A31AA68F53FAC6BBD949325E46C44C3 /* Support Files */,
 			);
-			name = iOS;
+			path = Sweeft;
+			sourceTree = "<group>";
+		};
+		7AFA9902D0BEDECE4033F8803414DBDE /* Pods-Spotify2AppleMusic */ = {
+			isa = PBXGroup;
+			children = (
+				42CD264B9951FF70734BACCC023837F2 /* Info.plist */,
+				43C87B215E8EE27C85CC1DA05BA3A7C2 /* Pods-Spotify2AppleMusic.modulemap */,
+				0749EB82385A0639010F8ACB5EE80A51 /* Pods-Spotify2AppleMusic-acknowledgements.markdown */,
+				EBA076CA3D69A5294F91635A396D77E3 /* Pods-Spotify2AppleMusic-acknowledgements.plist */,
+				64C073CF591D2C6538417715BA2B2CF3 /* Pods-Spotify2AppleMusic-dummy.m */,
+				19D9FBA5D309454D415FEEE96FD20577 /* Pods-Spotify2AppleMusic-frameworks.sh */,
+				A406F2B2791523AD647E80F2003BD5A8 /* Pods-Spotify2AppleMusic-resources.sh */,
+				FFF9E363A8377813272B6949D660513E /* Pods-Spotify2AppleMusic-umbrella.h */,
+				07748C6E817D8DA4D5C6A26922F6F3B2 /* Pods-Spotify2AppleMusic.debug.xcconfig */,
+				6BE9C0249D6A15971C7C6BED7EED4707 /* Pods-Spotify2AppleMusic.release.xcconfig */,
+			);
+			name = "Pods-Spotify2AppleMusic";
+			path = "Target Support Files/Pods-Spotify2AppleMusic";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				36ACB36C2BD5000140C38998936568CB /* Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				62EC2E50CD3E80086AF7ED2A91050B80 /* Pods */,
 				6831D1795ADA363F646023916129B017 /* Products */,
 				DC10E2956B216C300AC0E246624DE20A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A3849249613A7BAA0517F6AD165097CC /* Sweeft */ = {
-			isa = PBXGroup;
-			children = (
-				1FAE5582AA91EC12F6694DB5E8D98B57 /* API.swift */,
-				6F8A9E2BB6F57B87DA01D61E1A7EA94F /* APIEndpoint.swift */,
-				F1DF6C119B12BFA658DB5CA00D0EE4D3 /* APIError.swift */,
-				5512CCF958B60FD83757E131DD02940D /* Array.swift */,
-				6D4CDAC4ABE5DEE6E832119485AEE15E /* ArrayOperators.swift */,
-				AD3AE8A9FFD308DF2E1C48D8E1FF4472 /* Assignment.swift */,
-				54CE64C120EB9321F68ABBEF2E7EA3C4 /* Auth.swift */,
-				4A804E88DE0A176BE2CFA4FE82C1B93E /* Binding.swift */,
-				1B95A3649868183F181D69265133EB31 /* Bool.swift */,
-				0F7E5C53321842A21BB6DD99D9BA8033 /* BulkPromise.swift */,
-				495B1754C31B55C97E0300B4DAE7D8E1 /* Collection.swift */,
-				E34062A19922E1570E1E942F0097D82E /* Constraint.swift */,
-				29B6E42687BBE8C0E93FB4B5727A3EFE /* CSP.swift */,
-				F49E20A51BB2868302CD3DBF3AF27D35 /* Data.swift */,
-				51621D3834F2A73D4E3299473C83DFA9 /* DataRepresentable.swift */,
-				43058FA3798A82A50E68312807A313B4 /* Date.swift */,
-				9C3AF6E56866442923668E96D220FF51 /* Defaultable.swift */,
-				E248AA441704AB2B033F83538E825408 /* Dictionary.swift */,
-				A265A38D0D51D42A655076A323077F86 /* Double.swift */,
-				8FEF7E4DEB0E52E42BDF3741B9305F03 /* Functional.swift */,
-				8E7BB358E669A023A029E8B0CEE9A306 /* Grant.swift */,
-				39FF4770A6F3ABF2E088D4579AEDDF95 /* Graph.swift */,
-				791A2E64B0BF5E741EB84511CFA1F669 /* Int.swift */,
-				ECB3D5373E32EB3465801C507EE27188 /* JSON.swift */,
-				5AC2704C1CAA9413CEA890B839A8CF60 /* Mappable.swift */,
-				DE125B97BFC6B655FA60717ABBB37696 /* Math.swift */,
-				751C6CEBB1C776C2BC064AB2AF5EE956 /* MultithreadingOperators.swift */,
-				8485254C7B21081CC5A62DAD9363D224 /* Mutlithreading.swift */,
-				38F750E51EA6AD1F5A68E175E6E7E411 /* Node.swift */,
-				326857ECAD38777E3123E5957F1843A0 /* OAuth.swift */,
-				D943428C3E236E71C8AD9304EC57075A /* OAuthManager.swift */,
-				56AAEFCEEED70EEC5CCDEE5174C19E51 /* ObjectStatus.swift */,
-				006120FE05DC3D40F7162704D8DB8527 /* Observable.swift */,
-				9ACEDDF617E6E1FD50D9BE795B5C03DF /* Optional.swift */,
-				2F182A6797E3E0D5A7AC6F02512A25A0 /* Other.swift */,
-				27BE21BF64816465A6781E03C5A24755 /* PriorityQueue.swift */,
-				19CC9933BAC77131F7A31C964C7EC3C2 /* Promise.swift */,
-				91BE9BBD8BB8B2E85BF11C5BD4671D86 /* PromiseHandler.swift */,
-				F215804141F204C06475AADBD1F2DA91 /* ReducingParameters.swift */,
-				42998ECA796A4AE02CDAD6FD14F63E6B /* ReducingParametersOperators.swift */,
-				964EC468A3E73718F7E9D6D6A344E23B /* Set.swift */,
-				291E015DC7A63FF5D4EEC4A22D898E5C /* Status.swift */,
-				10FC87276BE92FB1D7EB6E6505E3D8B9 /* StatusFetcher.swift */,
-				42392BE2081E4021273F61D238731EDE /* StatusKey.swift */,
-				8FF26398C62928EAA84E6E9D64D972C5 /* StatusSerializable.swift */,
-				8A6FD786400A4CBA092879B7670DACFC /* String.swift */,
-				B47C43B5C348BED7C9C35FEBFFCC8C9A /* URL.swift */,
-				EEA55C36F24460A541192942D61CA7DB /* ValueComparable.swift */,
-				D6A9E58A485D8F9595276A27D0B72F70 /* VariableInstance.swift */,
-				0ABADFC394B32B2E32F0E75E44F5D3CB /* Support Files */,
-			);
-			name = Sweeft;
-			path = Sweeft;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		DC10E2956B216C300AC0E246624DE20A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4EF8B92DFC64D5C8CBBD81FF6EEC955A /* Pods-Spotify2AppleMusic */,
+				7AFA9902D0BEDECE4033F8803414DBDE /* Pods-Spotify2AppleMusic */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -334,8 +397,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E547616E1DF33DC62F7079F1061FAB7 /* Build configuration list for PBXNativeTarget "Sweeft" */;
 			buildPhases = (
-				EDD360BA6EFC0A50A8965C48AD89E14F /* Sources */,
-				3165DCB7D5536445F6278CACE35B17C6 /* Frameworks */,
+				64127D3692F4DB0CADD2E0602BB1FFFD /* Sources */,
+				E0461793880E4978946E4B329AB359F5 /* Frameworks */,
 				34C4640E521831FFF8F54DB0746668D4 /* Headers */,
 			);
 			buildRules = (
@@ -371,8 +434,8 @@
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -393,68 +456,88 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		64127D3692F4DB0CADD2E0602BB1FFFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3F5B3F75B2B1AE2DF733E3B78107C2 /* API.swift in Sources */,
+				7DF1BC81F36DDD3B0313C8F2010F8B73 /* APIEndpoint.swift in Sources */,
+				AD92121B1EB20B883034F71BABE7CB8E /* APIError.swift in Sources */,
+				D5C2A25E01EFF2C6FA36E875CF8C1519 /* APIObject.swift in Sources */,
+				3916D0ED3205C947771B3CFDAD2D9208 /* APIObjectWithDetail.swift in Sources */,
+				5B68B9BB655ABAF7217C1E27E469B441 /* APIResponse.swift in Sources */,
+				58EF11F01FD0EFCAF1524DCBF69B11EC /* Array.swift in Sources */,
+				C36D4488814874991B3B703E4B45FE23 /* ArrayOperators.swift in Sources */,
+				A94F8B47A381B06A92B3A4443A516DE2 /* Assignment.swift in Sources */,
+				882B5C3F25D434E806E6D0C0A4936F84 /* Auth.swift in Sources */,
+				E83F9886736F970B855ABF9924B3973D /* Binding.swift in Sources */,
+				4E32ED4A60F224E8733283AA87453468 /* Bool.swift in Sources */,
+				210A07A5145B67C70015E972C9155D7B /* BulkPromise.swift in Sources */,
+				98E0D17C4779DF7576EECB3E5A503079 /* Cache.swift in Sources */,
+				FAF7DE073753BE345FDF43C3871D1BAF /* Collection.swift in Sources */,
+				F28F559B775D685531B3933291C122F6 /* Constraint.swift in Sources */,
+				CA1FDF398688C95BCDB8E69D1ACCD0B5 /* CSP.swift in Sources */,
+				371709DE84B5D31278CF002394DAEA1F /* CustomAPI.swift in Sources */,
+				6106776DA868F76CCE01D0E2145AC3BD /* Data.swift in Sources */,
+				9C034F3016714CBFCB6741D22C40F2E5 /* DataRepresentable.swift in Sources */,
+				F203C4AC0338C618CBC6157D420752AE /* Date.swift in Sources */,
+				526343C488B28D00D671FAE23229F196 /* Defaultable.swift in Sources */,
+				C35D85ACFFA9AA534F01E489E5BB5AF7 /* DelegatedAPI.swift in Sources */,
+				346F03837173F93EDDEBEA6653FBE899 /* Dictionary.swift in Sources */,
+				5FD68710668A0A745233809EEB3DDD7D /* Dispatcher.swift in Sources */,
+				986F423B059718C104CC868FBC35EED3 /* Double.swift in Sources */,
+				3F940D281DE10BBFF94709C8C0B3791F /* ErrorHandling.swift in Sources */,
+				EE7D94B8A1C28B78DC4311C08F5EB534 /* FailableBulkPromise.swift in Sources */,
+				E7A8AEAE586B01DF8F23B775111827E2 /* Functional.swift in Sources */,
+				2FD05991176A64DEC25491A5E1245C61 /* GenerizableError.swift in Sources */,
+				B237470536B237F4E96BC43E43163206 /* Grant.swift in Sources */,
+				4681AF2D87765C60796A80ABE89DBA9D /* HTTPMethod.swift in Sources */,
+				CF26AC370608EB0985162BBD505152FA /* Int.swift in Sources */,
+				8475F6FCE036A1311A26DB535FEE1758 /* JSON.swift in Sources */,
+				30BC0988D4DF63490B86D9DC516AA383 /* Keychain.swift in Sources */,
+				2FC360A325E458C30CB75A5FA49B62C5 /* Mappable.swift in Sources */,
+				8459F8049B7FCC8171A52B233E73172F /* Math.swift in Sources */,
+				5C38A7AD0A1104A403A4D3159E422643 /* MultiFormData.swift in Sources */,
+				386994EF8A25DE581047C4C6570479B8 /* MultithreadingOperators.swift in Sources */,
+				510A7F7660C1749E8E65B72510E7EB22 /* Mutlithreading.swift in Sources */,
+				E747078FD6D39F229C85D11B7FC660F8 /* OAuth.swift in Sources */,
+				3A9177DF0AD67DC2F1A3E9E30D00E52F /* OAuthAPI.swift in Sources */,
+				81B38BD29C54492D878E9DCC0F903B41 /* OAuthManager.swift in Sources */,
+				616668FC3991B4C28D9D4944D54B197C /* Observable.swift in Sources */,
+				4F95372C42ED105AD971569205E199D9 /* Optional.swift in Sources */,
+				33306B4E805980FAF81239C3E7947150 /* Other.swift in Sources */,
+				5169832E11436F96FCCFD073F9124E0A /* PriorityQueue.swift in Sources */,
+				12B6E9A8487F573384E67BCB8C27C902 /* Promise.swift in Sources */,
+				0CD552FDE8459E581B9A1F8EA97A0344 /* PromiseProtocol.swift in Sources */,
+				A08CBF000B799FDC8D3F7924685E12E4 /* PromiseProtocolConformance.swift in Sources */,
+				2298FAE3F643A25A45A386946BB35545 /* PromiseSetter.swift in Sources */,
+				F9FDA997063DF9185D227F8FDD4B912E /* PromiseSetterProtocol.swift in Sources */,
+				85488AEC4F838A765155E23547E46908 /* PromiseState.swift in Sources */,
+				2A6271B9BB1B2B2F2B65FF5A204B901F /* ReducingParameters.swift in Sources */,
+				71DAD7207F9BE5546FD0B59666B439D4 /* ReducingParametersOperators.swift in Sources */,
+				EF24559D5F8F13A39444FD0C4928F348 /* RefreshableAPIObject.swift in Sources */,
+				B26DC32A38CFF9F548EB01C22993B9A3 /* Result.swift in Sources */,
+				27045608AACFF146B363F12BCB644E8F /* RetryPromise.swift in Sources */,
+				501EF50289645BB6E7A916E749B0685D /* Set.swift in Sources */,
+				29CF865E45B48B1AE999869906704559 /* SettablePromise.swift in Sources */,
+				D9FEA21AED0C81A283CBF535BEDD1513 /* SingleStatus.swift in Sources */,
+				0CF7FDC862F4E0EE6B345335A6D5D910 /* Status.swift in Sources */,
+				1C23BCE0601F400F75463652DD01742F /* StatusKey.swift in Sources */,
+				6E258740CFBEECF05A64FFCC27EF6AAA /* Storage.swift in Sources */,
+				001953846E8D8CC4F2A77F8CB810D1EB /* String.swift in Sources */,
+				26B894A7E343545A95CE78C199AD5EB4 /* Sweeft-dummy.m in Sources */,
+				476A18C95FBB52498B3BFAA1DD41736C /* URL.swift in Sources */,
+				CB7982D72E2A218C1BB9E2455BE66BA5 /* ValueComparable.swift in Sources */,
+				17EFA95CBBC3A97654D42EE660EF354A /* VariableInstance.swift in Sources */,
+				5B8EA542CD887D5600E047F89716A86C /* WebForm.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CD0F425B1761AB73CE2832F88D18D142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7B2F16401E7A9A69CC4451A7E8493AC4 /* Pods-Spotify2AppleMusic-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDD360BA6EFC0A50A8965C48AD89E14F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D8C569BB936E935E310EDE512721D35F /* API.swift in Sources */,
-				23F72A0BBD44330281D4D5FF6EC0FC7B /* APIEndpoint.swift in Sources */,
-				0D9735B5463FEBCEE8B197D00B35EDED /* APIError.swift in Sources */,
-				105B5E16EBEB8A79A8855ED0BB2A8C29 /* Array.swift in Sources */,
-				210BFFEA67CB51AED4186BBA1ADDFA87 /* ArrayOperators.swift in Sources */,
-				14EC8974057943F7255EC0BAA4EEC521 /* Assignment.swift in Sources */,
-				4EAF255EB247DFED1074A3758F18213D /* Auth.swift in Sources */,
-				0AE04C9750CC823CBC0DCF14B571C6D1 /* Binding.swift in Sources */,
-				5F5465A1F5EBFA80E5957CE48E6611F1 /* Bool.swift in Sources */,
-				205C67953FD66DFB3388E1056E2BF6D5 /* BulkPromise.swift in Sources */,
-				2AC5294AC75904C1F5CAAF15DB02972A /* Collection.swift in Sources */,
-				CDD4B2C96F4323A7855EC52ACA522877 /* Constraint.swift in Sources */,
-				548A3BBB616E22DC8160089A98DEFD4E /* CSP.swift in Sources */,
-				9F7D879C26EC10E21F23F1F33452F88F /* Data.swift in Sources */,
-				ABD9670382F38E53F207308AE99DA810 /* DataRepresentable.swift in Sources */,
-				830C70F78FC09D6082F745545036C5C3 /* Date.swift in Sources */,
-				C34AB9BBDDFAB3E30458A46E29A8E127 /* Defaultable.swift in Sources */,
-				2DEFEE67258E930D7DC2DEE5B722EA84 /* Dictionary.swift in Sources */,
-				7D6B7959278A7395F43400A323FC0147 /* Double.swift in Sources */,
-				EB2BE8232BD9DDD52721463763D0A231 /* Functional.swift in Sources */,
-				7483B7C12E10EF0FF4BFB2E252ECF5BE /* Grant.swift in Sources */,
-				D1D7F544E2C2AA2CF07251A7E7E096E6 /* Graph.swift in Sources */,
-				211DDA048790EB10A99FABCE1951D024 /* Int.swift in Sources */,
-				15B8681559197A89DE9CA60D2F686983 /* JSON.swift in Sources */,
-				C7171E36592C8DB350D51736757B9292 /* Mappable.swift in Sources */,
-				466E8D92C1F79DB254C5051C343CA0CD /* Math.swift in Sources */,
-				C1B6EEFC667886C7570B52F769F4C8B2 /* MultithreadingOperators.swift in Sources */,
-				B8AEF017B8FA471D554E0030F892789C /* Mutlithreading.swift in Sources */,
-				0F6DA86B4AB019D77BC3F01DB0034DB9 /* Node.swift in Sources */,
-				DEEA12E17C60546D41EB0893E022E76F /* OAuth.swift in Sources */,
-				74A004B0D342F55BFF5BB15AEECDDFF0 /* OAuthManager.swift in Sources */,
-				83A10A2640C4264B8F93B38FAC715FAC /* ObjectStatus.swift in Sources */,
-				CF5385E0DB38C60EC7C1AAF2946AB338 /* Observable.swift in Sources */,
-				15B8D9CC6EAE9566F86DE24DBFCCF647 /* Optional.swift in Sources */,
-				7289EA30E612B060AE41BA5D6CB0F3BF /* Other.swift in Sources */,
-				961A6F6B607C66F986DB1564A182BE05 /* PriorityQueue.swift in Sources */,
-				AC892DBC04ADC89430928C254D2E08AD /* Promise.swift in Sources */,
-				4362ECACCE0BFE33BBB0203BA4655742 /* PromiseHandler.swift in Sources */,
-				6022B5F9118968210B552646D9C4EE01 /* ReducingParameters.swift in Sources */,
-				4DBFCF67A5B95BE33505477CBACCE855 /* ReducingParametersOperators.swift in Sources */,
-				CF9755486980199478EC35BE2B02F1A8 /* Set.swift in Sources */,
-				8195A1DD2F34957EBBC5C8AAB8B846A7 /* Status.swift in Sources */,
-				07D8E03907635CE44BB7400FDD88D8ED /* StatusFetcher.swift in Sources */,
-				84F36F28EEA6F5EAC0A5E5EBE66DFF39 /* StatusKey.swift in Sources */,
-				70CB1C9E2D64568410F976D81DD5615C /* StatusSerializable.swift in Sources */,
-				903EFF717CD86C954B6B61C27182512B /* String.swift in Sources */,
-				87529DB9DFD6EDC83B1DEA98D8ADB847 /* Sweeft-dummy.m in Sources */,
-				E967153441CEDA6539FC90193B077EED /* URL.swift in Sources */,
-				E9DC9CB1DF47E41751084338BF9EBEEC /* ValueComparable.swift in Sources */,
-				CFAC1E56D79EE5521372AF4B15CE08A3 /* VariableInstance.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,223 +553,259 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
+		319C25980C2F91DB0BFFF6740306642D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07748C6E817D8DA4D5C6A26922F6F3B2 /* Pods-Spotify2AppleMusic.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Pods-Spotify2AppleMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Spotify2AppleMusic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		462F7FE063D2A5566970CEA8656322F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BE9C0249D6A15971C7C6BED7EED4707 /* Pods-Spotify2AppleMusic.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Pods-Spotify2AppleMusic.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Spotify2AppleMusic;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		49B5A78DBE571998053070754D3695E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		792D6B6E87DF5AFDFA944AEBBB2BA540 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4AFF6DBB7991033BD91AEB209DA01F /* Sweeft.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Sweeft/Sweeft-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Sweeft/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Sweeft/Sweeft.modulemap";
+				PRODUCT_NAME = Sweeft;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD369323FD85CB26347C0D75C75D837F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		7441EF26C4DAE67CCBC7F8F14E1EB5D7 /* Release */ = {
+		FADC7B1911173EE40E11EDE419845DF1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B78E61F6C8615D533CBA91746147F772 /* Sweeft.xcconfig */;
+			baseConfigurationReference = 2B4AFF6DBB7991033BD91AEB209DA01F /* Sweeft.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/Sweeft/Sweeft-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/Sweeft/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/Sweeft/Sweeft.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = Sweeft;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		77AF6930214B7351CB9C0636607AC8EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B78E61F6C8615D533CBA91746147F772 /* Sweeft.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Sweeft/Sweeft-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Sweeft/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Sweeft/Sweeft.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = Sweeft;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A644C895D05AE8AA0E7740D64D54FCCC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA499D131DE6CEC80BC1F69D5E6E65C1 /* Pods-Spotify2AppleMusic.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Pods-Spotify2AppleMusic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Spotify2AppleMusic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A9FC59A37910EFCCDD1869A4F8822440 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6927A0F362E1004C9369BB2FB3942A4 /* Pods-Spotify2AppleMusic.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Spotify2AppleMusic/Pods-Spotify2AppleMusic.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Spotify2AppleMusic;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -696,8 +815,8 @@
 		1E547616E1DF33DC62F7079F1061FAB7 /* Build configuration list for PBXNativeTarget "Sweeft" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				77AF6930214B7351CB9C0636607AC8EF /* Debug */,
-				7441EF26C4DAE67CCBC7F8F14E1EB5D7 /* Release */,
+				792D6B6E87DF5AFDFA944AEBBB2BA540 /* Debug */,
+				FADC7B1911173EE40E11EDE419845DF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -705,8 +824,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
-				E72E7977875C2D251FC62736BBDDC389 /* Release */,
+				DD369323FD85CB26347C0D75C75D837F /* Debug */,
+				49B5A78DBE571998053070754D3695E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -714,8 +833,8 @@
 		8795DBA0B65634CAE5185766F015D958 /* Build configuration list for PBXNativeTarget "Pods-Spotify2AppleMusic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A9FC59A37910EFCCDD1869A4F8822440 /* Debug */,
-				A644C895D05AE8AA0E7740D64D54FCCC /* Release */,
+				319C25980C2F91DB0BFFF6740306642D /* Debug */,
+				462F7FE063D2A5566970CEA8656322F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -29,49 +29,6 @@ public extension Array {
     }
     
     /**
-     Map with index
-     
-     - Parameter transform: tranform function with index
-     
-     - Returns: transformed array
-     */
-    func map<T>(_ transform: (Element, Int) -> T) -> [T] {
-        return withIndex => transform
-    }
-    
-    /**
-     For each with index
-     
-     - Parameter body: body function with index
-     */
-    func forEach(_ body: (Element, Int) -> Void) {
-        withIndex => body
-    }
-    
-    /**
-     Filter with index
-     
-     - Parameter isIncluded: isIncluded function with index
-     
-     - Returns: filtered array
-     */
-    func filter(_ isIncluded: (Element, Int) -> Bool) -> [Element] {
-        return withIndex |> isIncluded => firstArgument
-    }
-    
-    /**
-     Reduce with index
-     
-     - Parameter initialResult: Accumulator
-     - Parameter nextPartialResult: resulthandler with index
-     
-     - Returns: Result
-     */
-    func reduce<Result>(_ initialResult: Result, _ nextPartialResult: @escaping (Result, Element, Int) -> Result) -> Result {
-        return withIndex ==> initialResult ** { nextPartialResult($0, $1.0, $1.1) }
-    }
-    
-    /**
      Reduce with first item as partial result
      
      - Parameter nextPartialResult: resulthandler
@@ -79,20 +36,6 @@ public extension Array {
      - Returns: Result
      */
     func reduce(_ nextPartialResult: @escaping (Element, Element) -> Element) -> Element? {
-        guard let first = first else {
-            return nil
-        }
-        return array(withLast: count - 1) ==> first ** nextPartialResult
-    }
-    
-    /**
-     Reduce with first item as partial result and with index
-     
-     - Parameter nextPartialResult: resulthandler with index
-     
-     - Returns: Result
-     */
-    func reduce(_ nextPartialResult: @escaping (Element, Element, Int) -> Element) -> Element? {
         guard let first = first else {
             return nil
         }
@@ -130,6 +73,29 @@ public extension Array {
      */
     func array(withLast number: Int) -> [Element] {
         return <>(<>self).array(withFirst: number)
+    }
+    
+    /**
+     Will give you the array starting at a specific index
+     
+     - Parameter index: Index at which you want to start
+     
+     - Returns: Array with the last n Elements
+     */
+    func array(from index: Int) -> [Element] {
+        return array(withLast: count - index)
+    }
+    
+    /**
+     Will separate the array into different chunks of the same size
+     
+     - Parameter size: Size of the chunks
+     
+     - Returns: Array of chunks
+     */
+    func chunks(of size: Int) -> [[Element]] {
+        guard !isEmpty else { return .empty }
+        return [array(withFirst: size)] + array(from: size).chunks(of: size)
     }
     
     /**
@@ -171,7 +137,7 @@ public extension Array {
             let a = (self.randomIndex).?
             let b = (self.randomIndex).?
             if a != b {
-                array[a] <=> array[b]
+                array.swapAt(a, b)
             }
         }
         return array

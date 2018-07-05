@@ -46,11 +46,10 @@ class ViewController: UIViewController {
         statusLabel.text = "Fetching Songs from Spotify"
         self.setProgress(p: 0)
         let index = pickerView.selectedRow(inComponent: 0)
-        selections[index].songs().onSuccess { songs -> Promise<[Song], APIError> in
+        selections[index].songs().flatMap { songs in
             self.statusLabel.text = "Finding Counterparts in Itunes"
             return Itunes().search(for: songs)
         }
-        .future
         .onSuccess(call: self.handle)
     }
     
@@ -67,7 +66,7 @@ class ViewController: UIViewController {
                 }
                 if let plist = playlists[index] as? MPMediaPlaylist {
                     var added = 0
-                    songs => { song, index in
+                    songs.withIndex => { song, index in
                         .userInitiated >>> {
                             plist.addItem(withProductID: song.id, completionHandler: { (error) in
                                 .main >>> {

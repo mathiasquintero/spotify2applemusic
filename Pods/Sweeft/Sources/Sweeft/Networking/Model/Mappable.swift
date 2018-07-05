@@ -8,6 +8,8 @@
 
 import Foundation
 
+
+@available(*, deprecated, message: "Deserializable is deprecated and will soon no longer be supported")
 public protocol Deserializable: DataRepresentable {
 
     /// Initialize from json
@@ -49,10 +51,19 @@ extension Deserializable {
                            arguments: [String:CustomStringConvertible] = .empty,
                            headers: [String:CustomStringConvertible] = .empty,
                            queries: [String:CustomStringConvertible] = .empty,
-                           auth: Auth = NoAuth.standard,
-                           for path: String...) -> Result {
+                           auth: Auth? = nil,
+                           for path: String...,
+                           maxCacheTime: CacheTime = .no) -> Result {
         
-        return api.doObjectRequest(with: method, to: endpoint, arguments: arguments, headers: headers, queries: queries, auth: auth, body: nil, at: path)
+        return api.doObjectRequest(with: method,
+                                   to: endpoint,
+                                   arguments: arguments,
+                                   headers: headers,
+                                   queries: queries,
+                                   auth: auth,
+                                   body: nil,
+                                   at: path,
+                                   maxCacheTime: maxCacheTime)
     }
     
     public static func getAll<T: API>(using api: T,
@@ -61,11 +72,20 @@ extension Deserializable {
                               arguments: [String:CustomStringConvertible] = .empty,
                               headers: [String:CustomStringConvertible] = .empty,
                               queries: [String:CustomStringConvertible] = .empty,
-                              auth: Auth = NoAuth.standard,
+                              auth: Auth? = nil,
                               for path: String...,
-                              using internalPath: [String] = .empty) -> Results {
+                              using internalPath: [String] = .empty,
+                              maxCacheTime: CacheTime = .no) -> Results {
         
-        return api.doObjectsRequest(with: method, to: endpoint, arguments: arguments, headers: headers, queries: queries, auth: auth, body: nil, at: path)
+        return api.doObjectsRequest(with: method,
+                                    to: endpoint,
+                                    arguments: arguments,
+                                    headers: headers,
+                                    queries: queries,
+                                    auth: auth,
+                                    body: nil,
+                                    at: path,
+                                    maxCacheTime: maxCacheTime)
     }
     
 }
@@ -82,9 +102,15 @@ extension Serializable {
                             arguments: [String:CustomStringConvertible] = .empty,
                             headers: [String:CustomStringConvertible] = .empty,
                             queries: [String:CustomStringConvertible] = .empty,
-                            auth: Auth = NoAuth.standard) -> JSON.Result {
+                            auth: Auth? = nil) -> JSON.Result {
         
-        return api.doJSONRequest(with: method, to: endpoint, arguments: arguments, headers: headers, queries: queries, auth: auth, body: json)
+        return api.doJSONRequest(with: method,
+                                 to: endpoint,
+                                 arguments: arguments,
+                                 headers: headers,
+                                 queries: queries,
+                                 auth: auth,
+                                 body: json)
     }
     
     public func put<T: API>(using api: T,
@@ -92,9 +118,15 @@ extension Serializable {
                             arguments: [String:CustomStringConvertible] = .empty,
                             headers: [String:CustomStringConvertible] = .empty,
                             queries: [String:CustomStringConvertible] = .empty,
-                            auth: Auth = NoAuth.standard) -> JSON.Result {
+                            auth: Auth? = nil) -> JSON.Result {
         
-        return send(using: api, method: .put, at: endpoint, arguments: arguments, headers: headers, queries: queries, auth: auth)
+        return send(using: api,
+                    method: .put,
+                    at: endpoint,
+                    arguments: arguments,
+                    headers: headers,
+                    queries: queries,
+                    auth: auth)
     }
     
     public func post<T: API>(using api: T,
@@ -102,9 +134,34 @@ extension Serializable {
                     arguments: [String:CustomStringConvertible] = .empty,
                     headers: [String:CustomStringConvertible] = .empty,
                     queries: [String:CustomStringConvertible] = .empty,
-                    auth: Auth = NoAuth.standard) -> JSON.Result {
+                    auth: Auth? = nil) -> JSON.Result {
         
-        return send(using: api, method: .post, at: endpoint, arguments: arguments, headers: headers, queries: queries, auth: auth)
+        return send(using: api,
+                    method: .post,
+                    at: endpoint,
+                    arguments: arguments,
+                    headers: headers,
+                    queries: queries,
+                    auth: auth)
+    }
+    
+}
+
+extension RawRepresentable where RawValue: Serializable {
+    
+    var json: JSON {
+        return rawValue.json
+    }
+    
+}
+
+extension RawRepresentable where RawValue: Deserializable {
+    
+    init?(json: JSON) {
+        guard let value = RawValue(from: json) else {
+            return nil
+        }
+        self.init(rawValue: value)
     }
     
 }

@@ -106,10 +106,27 @@ extension String: DataRepresentable {
     
 }
 
+extension String: Deserializable {
+    
+    public init?(from json: JSON) {
+        guard let string = json.string else {
+            return nil
+        }
+        self = string
+    }
+    
+}
+
 extension String: Serializable {
     
     /// JSON Value
     public var json: JSON {
+        if let double = Double(self) {
+            return double.json
+        }
+        if let bool = Bool(self) {
+            return bool.json
+        }
         return .string(self)
     }
     

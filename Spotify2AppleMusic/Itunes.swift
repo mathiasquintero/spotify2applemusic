@@ -31,26 +31,25 @@ extension Itunes {
     func search(for song: SpotifySong) -> Promise<Song?, APIError> {
         return doJSONRequest(to: .search,
                              headers: ["X-Apple-Store-Front" : "143446-10,32 ab:rSwnYxS0 t:music2", "X-Apple-Tz" : "7200"],
-                             queries: ["clientApplication": "MusicPlayer", "term": song.term, "entity": "song"]).nested { json, promise in
+                             queries: ["clientApplication": "MusicPlayer", "term": song.term, "entity": "song"]).map { json in
                                 
                                 
-                                let songs = json["storePlatformData"]["lockup"]["results"].dict => lastArgument |> { $0.isSong }
-                                let possibleSongs = songs |> song.artistMatches
-                                let matchingSongs = possibleSongs |> song.nameMatches
-                                let albumMatchingSongs = matchingSongs |> song.albumMatches
-                                let dict = albumMatchingSongs.first ?? matchingSongs.first
-                                if dict == nil {
-                                    print("Didn't find \(song.term)")
-                                }
-                                let song = dict?["id"].string | Song.initializer(for: song)
-                                promise.success(with: song)
+            let songs = json["storePlatformData"]["lockup"]["results"].dict => lastArgument |> { $0.isSong }
+            let possibleSongs = songs |> song.artistMatches
+            let matchingSongs = possibleSongs |> song.nameMatches
+            let albumMatchingSongs = matchingSongs |> song.albumMatches
+            let dict = albumMatchingSongs.first ?? matchingSongs.first
+            if dict == nil {
+                print("Didn't find \(song.term)")
+            }
+            let song = dict?["id"].string | Song.initializer(for: song)
+            return song
         }
     }
     
     func search(for songs: [SpotifySong]) -> Promise<[Song], APIError> {
-        return BulkPromise(promises: songs => { self.search(for: $0) }).nested {
-            return $0.flatMap { $0 }
-        }
+        let promises = songs => { search(for: $0) }
+        return promises.bulk.map { $0.compactMap { $0 } }
     }
     
 }

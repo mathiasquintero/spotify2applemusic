@@ -1,12 +1,21 @@
 PODS:
-  - Sweeft (0.5.5)
+  - Sweeft (0.15.2)
 
 DEPENDENCIES:
-  - Sweeft
+  - Sweeft (from `https://github.com/nerdsupremacist/Sweeft.git`)
+
+EXTERNAL SOURCES:
+  Sweeft:
+    :git: https://github.com/nerdsupremacist/Sweeft.git
+
+CHECKOUT OPTIONS:
+  Sweeft:
+    :commit: d95af83a7abc27ffab66e076466e91f2a8f2ae49
+    :git: https://github.com/nerdsupremacist/Sweeft.git
 
 SPEC CHECKSUMS:
-  Sweeft: ff11d10f27281257a35e13ad29813bd70348aee6
+  Sweeft: 89d3d1b18635c862a6284483bae9b235a450f049
 
-PODFILE CHECKSUM: 2576cdc381382563ac9f34e2dd7a4476702d3905
+PODFILE CHECKSUM: 695436d2b47f43fc545a76a228d9227e9ee636bf
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.4.0

@@ -43,17 +43,6 @@ public func <-<T>(_ items: inout [T], _ handler: (T) -> (T)) {
 }
 
 /**
- Map assignment. Will assign the Result of map
- 
- - Parameter items: array
- - Parameter handler: mapping function
- 
- */
-public func <-<T>(_ items: inout [T], _ handler: (T, Int) -> (T)) {
-    items = items => handler
-}
-
-/**
  FlatMap assignment. Will assign the Result of flatMap
  
  - Parameter items: array
@@ -74,16 +63,6 @@ infix operator <|: AssignmentPrecedence
  
  */
 public func <|<T>(_ items: inout [T], _ handler: (T) -> Bool) {
-    items = items |> handler
-}
-
-/**
- Filter assignment. Will assign the Result of filter
- 
- - Parameter items: array
- - Parameter handler: isIncluded function
- */
-public func <|<T>(_ items: inout [T], _ handler: (T, Int) -> Bool) {
     items = items |> handler
 }
 
@@ -119,7 +98,7 @@ public postfix func .?<V: Defaultable>(_ value: V?) -> V {
  
  - Returns: array with all the elements unwrapped with default.
  */
-public postfix func .?<T: Defaultable, C: Collection>(_ items: C) -> [T] where C.Iterator.Element == T? {
+public postfix func .?<T: Defaultable, C: Collection>(_ items: C) -> [T] where C.Element == T? {
     return items => (.?)
 }
 

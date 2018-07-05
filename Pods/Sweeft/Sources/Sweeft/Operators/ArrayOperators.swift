@@ -15,7 +15,7 @@ import Foundation
  
  - Returns: array without optionals
  */
-public prefix func !<T, C: Collection>(_ items: C?) -> [T] where C.Iterator.Element == T? {
+public prefix func !<T, C: Collection>(_ items: C?) -> [T] where C.Element == T? {
     return items ==> id
 }
 
@@ -195,7 +195,7 @@ public func |<T>(_ items: [T]?, _ index: Int) -> T? {
  
  - Returns: Value at index
  */
-public func |<T, C: Collection>(_ items: [T]?, _ indexes: C?) -> [T] where C.Iterator.Element == Int {
+public func |<T, C: Collection>(_ items: [T]?, _ indexes: C?) -> [T] where C.Element == Int {
     return !(indexes => { items | $0 })
 }
 
@@ -207,7 +207,7 @@ public func |<T, C: Collection>(_ items: [T]?, _ indexes: C?) -> [T] where C.Ite
  
  - Returns: Value at index
  */
-public func ||<T, C: Collection>(_ items: [T]?, _ indexes: C?) -> [T] where C.Iterator.Element == Int {
+public func ||<T, C: Collection>(_ items: [T]?, _ indexes: C?) -> [T] where C.Element == Int {
     return (items?.withIndex >>= flipArguments) || indexes
 }
 
@@ -231,7 +231,7 @@ public func |<K, V>(_ dictionary: [K:V]?, _ key: K) -> V? {
  
  - Returns: Value at key
  */
-public func |<V, C: Collection>(_ dictionary: [C.Iterator.Element:V]?, _ keys: C?) -> [V] {
+public func |<V, C: Collection>(_ dictionary: [C.Element:V]?, _ keys: C?) -> [V] {
     return !(keys => { dictionary | $0 })
 }
 
@@ -243,7 +243,7 @@ public func |<V, C: Collection>(_ dictionary: [C.Iterator.Element:V]?, _ keys: C
  
  - Returns: Value at key
  */
-public func ||<V, C: Collection>(_ dictionary: [C.Iterator.Element:V]?, _ keys: C?) -> [V] {
+public func ||<V, C: Collection>(_ dictionary: [C.Element:V]?, _ keys: C?) -> [V] {
     let realKeys = dictionary?.keys => id
     return dictionary | (realKeys - (keys => id))
 }
@@ -256,7 +256,7 @@ public func ||<V, C: Collection>(_ dictionary: [C.Iterator.Element:V]?, _ keys: 
  
  - Returns: is a a subset of b
  */
-public func <=<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
+public func <=<T>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     return a.isSubset(of: b)
 }
 
@@ -268,7 +268,7 @@ public func <=<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     - b: Set
  - Returns: is a a superset of b
  */
-public func >=<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
+public func >=<T>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     return b <= a
 }
 
@@ -280,7 +280,7 @@ public func >=<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
  
  - Returns: is a a strict subset of b
  */
-public func <<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
+public func <<T>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     return a <= b && a.count < b.count
 }
 
@@ -292,7 +292,7 @@ public func <<T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
  
  - Returns: is a a strict superset of b
  */
-public func ><T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
+public func ><T>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     return b < a
 }
 
@@ -306,7 +306,7 @@ infix operator <>: ComparisonPrecedence
  
  - Returns: are a and b disjoint
  */
-public func <><T: Hashable>(_ a: Set<T>, _ b: Set<T>) -> Bool {
+public func <><T>(_ a: Set<T>, _ b: Set<T>) -> Bool {
     return a.isDisjoint(with: b)
 }
 
@@ -319,7 +319,7 @@ prefix operator <>
  
  - Returns: Array containing the elements of C in reversed order
  */
-public prefix func <><C: Collection>(_ items: C?) -> [C.Iterator.Element] {
+public prefix func <><C: Collection>(_ items: C?) -> [C.Element] {
     return (items?.reversed()).?
 }
 
@@ -353,7 +353,7 @@ public prefix func <>(_ number: Int) -> Int {
  
  - Returns: Intersection of the 2 collections
  */
-public func -<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Iterator.Element> where C.Iterator.Element: Hashable {
+public func -<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Element> where C.Element: Hashable {
     return (b?.set | a?.set.subtracting).?
 }
 
@@ -365,7 +365,7 @@ public func -<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Iterator.Element> where 
  
  - Returns: Intersection of the 2 collections
  */
-public func &&<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Iterator.Element> where C.Iterator.Element: Hashable {
+public func &&<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Element> where C.Element: Hashable {
     return (b?.set | a?.set.intersection).?
 }
 
@@ -377,6 +377,6 @@ public func &&<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Iterator.Element> where
  
  - Returns: Union of the 2 collections
  */
-public func ||<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Iterator.Element> where C.Iterator.Element: Hashable {
+public func ||<C: Collection>(_ a: C?, _ b: C?) -> Set<C.Element> where C.Element: Hashable {
     return (b?.set | a?.set.union).?
 }
