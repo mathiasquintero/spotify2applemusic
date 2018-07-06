@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         Spotify.shared.loginIfNeeded(viewController: self)
-        Spotify.shared.playlists().onSuccess { selections in
+        Spotify.shared.playlists().onSuccess(in: .main) { selections in
             self.selections = [.all] + selections
             self.pickerView.reloadComponent(0)
         }
@@ -50,9 +50,9 @@ class ViewController: UIViewController {
             self.statusLabel.text = "Finding Counterparts in Itunes"
             return Itunes().search(for: songs)
         }
-        .onSuccess(call: self.handle)
+        .onSuccess(in: .main, call: self.handle)
     }
-    
+
     func handle(songs: [Song]) {
         statusLabel.text = "Found \(songs.count) songs"
         MPMediaLibrary.requestAuthorization { (status) in
